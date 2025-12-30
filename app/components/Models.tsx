@@ -5,30 +5,30 @@ import Link from "next/link";
 
 const models = [
   {
-    name: "Command",
-    description: "A family of high-performance generative models",
+    name: "Real Profit by Channel",
+    description: "MULTI-CHANNEL P&L",
     features: [
-      "Supports 23 languages for global communication and discovery",
-      "Seamlessly integrates into existing systems without disruption",
-      "Powers AI applications that reason, act, and generate insights anchored in your data",
+      "See revenue, costs, and actual profit across all channels",
+      "Same methodology. Apples to apples. Amazon vs TikTok vs Shopify vs Wholesale",
+      "Who's really making you money?",
     ],
   },
   {
-    name: "Embed",
-    description: "Industry-leading semantic search and RAG capabilities",
+    name: "Every Fee Decoded",
+    description: "FEE BREAKDOWN",
     features: [
-      "Best-in-class text embeddings for semantic search",
-      "Multilingual support for 100+ languages",
-      "Optimized for retrieval-augmented generation",
+      "Amazon charges 47 fee types. TikTok takes 15 different cuts",
+      "We track every single one",
+      "True 'take rate' per channel calculated",
     ],
   },
   {
-    name: "Rerank",
-    description: "Intelligent relevance ranking for search results",
+    name: "Never Stockout. Never Overstock.",
+    description: "INVENTORY INTELLIGENCE",
     features: [
-      "Dramatically improves search quality",
-      "Works with any search system",
-      "Understands context and intent",
+      "Track inventory across all channels and warehouses",
+      "Days of supply per SKU. Velocity tracking. Reorder alerts with lead time",
+      "'Viral Guard' — spike detection",
     ],
   },
 ];
@@ -42,7 +42,7 @@ export default function Models() {
         {/* Section Header */}
         <div className="text-center mb-14">
           <h2 className="text-web3-36 md:text-web3-48 font-medium text-neutral-50">
-            Our models. All business.
+            One platform. Everything you need to run ops.
           </h2>
         </div>
 
