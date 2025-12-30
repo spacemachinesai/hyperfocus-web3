@@ -37,34 +37,34 @@ export default function Models() {
   const [activeModel, setActiveModel] = useState(0);
 
   return (
-    <section className="section-padding bg-[#fafafa]">
+    <section className="section-padding bg-marble">
       <div className="container-web3">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-web3-36 md:text-web3-48 font-medium text-[#71717a]">
+          <h2 className="text-web3-36 md:text-web3-48 font-medium text-neutral-50">
             Our models. All business.
           </h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left - Chat Demo */}
-          <div className="bg-[#f5f0e8] rounded-3xl p-8">
+          <div className="bg-mushroom rounded-3xl p-8">
             {/* User message */}
             <div className="flex items-start gap-3 mb-6">
-              <div className="w-10 h-10 rounded-full bg-gray-300 overflow-hidden flex-shrink-0">
-                <div className="w-full h-full bg-gradient-to-br from-gray-400 to-gray-500" />
+              <div className="w-10 h-10 rounded-full bg-neutral-80 overflow-hidden flex-shrink-0">
+                <div className="w-full h-full bg-gradient-to-br from-neutral-70 to-neutral-60" />
               </div>
               <div className="flex-1">
-                <p className="text-[#212121] text-web3-16">
+                <p className="text-volcanic-900 text-web3-16">
                   Draft a concise product description for our new energy management platform. Here are the details:
                 </p>
-                <div className="mt-3 inline-flex items-center gap-2 bg-white rounded-lg px-4 py-2">
-                  <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="mt-3 inline-flex items-center gap-2 bg-pureWhite rounded-lg px-4 py-2">
+                  <svg className="w-5 h-5 text-neutral-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                   <div>
-                    <p className="text-sm font-medium text-[#212121]">E-MANAGE-PLATFORM_3.5</p>
-                    <p className="text-xs text-gray-500">PDF • 132 KB</p>
+                    <p className="text-sm font-medium text-volcanic-900">E-MANAGE-PLATFORM_3.5</p>
+                    <p className="text-xs text-neutral-50">PDF • 132 KB</p>
                   </div>
                 </div>
               </div>
@@ -72,7 +72,7 @@ export default function Models() {
 
             {/* Generating button */}
             <div className="flex justify-center mb-6">
-              <button className="inline-flex items-center gap-2 bg-[#FF7759] text-white px-6 py-3 rounded-full font-medium">
+              <button className="inline-flex items-center gap-2 bg-coral-500 text-white px-6 py-3 rounded-full font-medium">
                 <svg className="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24">
                   <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
                   <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
@@ -83,7 +83,7 @@ export default function Models() {
 
             {/* AI Response */}
             <div className="flex items-start gap-3">
-              <div className="w-10 h-10 rounded-lg bg-[#FF7759] flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 rounded-lg bg-coral-500 flex items-center justify-center flex-shrink-0">
                 <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
                   <rect x="4" y="4" width="6" height="6" rx="1" />
                   <rect x="14" y="4" width="6" height="6" rx="1" />
@@ -91,11 +91,11 @@ export default function Models() {
                   <rect x="14" y="14" width="6" height="6" rx="1" />
                 </svg>
               </div>
-              <div className="flex-1 bg-white rounded-2xl p-4">
-                <p className="text-[#212121] text-web3-14 mb-3">
+              <div className="flex-1 bg-pureWhite rounded-2xl p-4">
+                <p className="text-volcanic-900 text-web3-14 mb-3">
                   Certainly! Here&apos;s an initial draft of a product description for your energy management platform.
                 </p>
-                <p className="text-[#39594D] text-web3-14 italic">
+                <p className="text-green-500 text-web3-14 italic">
                   Introducing the ultimate solution for efficient energy management: our cutting-edge platform. This innovative system empowers businesses and organizations to take control of their energy consumption with razor sharp accuracy and data-driven insights...
                 </p>
                 <div className="flex items-center gap-2 mt-4 text-gray-400">
@@ -119,17 +119,17 @@ export default function Models() {
             {models.map((model, index) => (
               <div
                 key={index}
-                className="border-t border-gray-200 first:border-t-0"
+                className="border-t border-neutral-90 first:border-t-0"
               >
                 <button
                   onClick={() => setActiveModel(activeModel === index ? -1 : index)}
                   className="w-full py-6 flex items-center justify-between text-left"
                 >
-                  <span className={`text-web3-24 font-medium transition-colors ${activeModel === index ? "text-[#212121]" : "text-[#71717a]"}`}>
+                  <span className={`text-web3-24 font-medium transition-colors ${activeModel === index ? "text-volcanic-900" : "text-neutral-50"}`}>
                     {model.name}
                   </span>
                   <svg
-                    className={`w-5 h-5 text-[#212121] transition-transform ${activeModel === index ? "rotate-180" : ""}`}
+                    className={`w-5 h-5 text-volcanic-900 transition-transform ${activeModel === index ? "rotate-180" : ""}`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -143,24 +143,24 @@ export default function Models() {
                     {/* Blue accent line */}
                     <div className="w-full h-0.5 bg-blue-500 mb-4" />
 
-                    <p className="text-web3-16 text-[#71717a] mb-4">
+                    <p className="text-web3-16 text-neutral-50 mb-4">
                       {model.description}
                     </p>
 
                     <ul className="space-y-3 mb-6">
                       {model.features.map((feature, fIndex) => (
                         <li key={fIndex} className="flex items-start gap-3">
-                          <svg className="w-5 h-5 text-[#212121] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-5 h-5 text-volcanic-900 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>
-                          <span className="text-web3-14 text-[#212121]">{feature}</span>
+                          <span className="text-web3-14 text-volcanic-900">{feature}</span>
                         </li>
                       ))}
                     </ul>
 
                     <Link
                       href={`#${model.name.toLowerCase()}`}
-                      className="inline-flex items-center gap-2 text-web3-14 font-medium text-[#212121] hover:text-[#71717a] transition-colors"
+                      className="inline-flex items-center gap-2 text-web3-14 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors"
                     >
                       Learn more
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

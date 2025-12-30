@@ -13,13 +13,13 @@ const industries = [
   },
   {
     title: "Public Sector",
-    image: "/images/6ae6fc28f20cc442e8853d60392c50227a430992-840x840.jpg",
+    image: "/images/c422cea71d363bc9dbe8f93a7114f696ebcd04a3-840x840.png",
     color: "from-gray-500/70",
     href: "/solutions/public-sector",
   },
   {
     title: "Energy",
-    image: "/images/871cc9ed4e63113205ab55e2a6cb207d8d32a2aa-840x840.jpg",
+    image: "/images/ef4c547b886577f369e62da9e8864992578bfd6a-841x840.jpg",
     color: "from-sky-600/70",
     href: "/solutions/energy-and-utilities",
   },
@@ -43,11 +43,11 @@ export default function Industries() {
   };
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-pureWhite">
       <div className="container-web3">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-web3-24 md:text-web3-36 font-medium text-[#212121]">
+          <h2 className="text-web3-24 md:text-web3-36 font-medium text-volcanic-900">
             Powering progress across industries
           </h2>
 
@@ -55,19 +55,19 @@ export default function Industries() {
           <div className="flex items-center gap-2">
             <button
               onClick={prevSlide}
-              className="w-10 h-10 rounded-full border border-[#E5E5E5] flex items-center justify-center hover:bg-gray-50 transition-colors"
+              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-marble transition-colors"
               aria-label="Previous"
             >
-              <svg className="w-5 h-5 text-[#212121]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-volcanic-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
             <button
               onClick={nextSlide}
-              className="w-10 h-10 rounded-full border border-[#E5E5E5] flex items-center justify-center hover:bg-gray-50 transition-colors"
+              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-marble transition-colors"
               aria-label="Next"
             >
-              <svg className="w-5 h-5 text-[#212121]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-volcanic-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
@@ -100,9 +100,9 @@ export default function Industries() {
 
         {/* Progress Bar */}
         <div className="mt-8 flex justify-center">
-          <div className="w-64 h-1 bg-gray-200 rounded-full overflow-hidden">
+          <div className="w-64 h-1 bg-neutral-90 rounded-full overflow-hidden">
             <div
-              className="h-full bg-[#FF7759] rounded-full transition-all duration-300"
+              className="h-full bg-coral-500 rounded-full transition-all duration-300"
               style={{ width: `${((currentSlide + 1) / Math.max(1, industries.length - 3)) * 50 + 50}%` }}
             />
           </div>

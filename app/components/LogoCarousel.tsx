@@ -16,17 +16,17 @@ const logos = [
 
 export default function LogoCarousel() {
   return (
-    <section className="py-16 bg-white overflow-hidden">
+    <section className="py-16 bg-pureWhite overflow-hidden">
       <div className="container-web3 mb-8">
-        <p className="text-web3-16 text-[#71717a] text-center">
+        <p className="text-web3-16 text-neutral-50 text-center">
           Trusted by industry leaders and developers worldwide
         </p>
       </div>
 
       <div className="relative">
         {/* Gradient overlays */}
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-white to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-white to-transparent z-10" />
+        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-pureWhite to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-pureWhite to-transparent z-10" />
 
         {/* Scrolling logos */}
         <div className="flex animate-scroll">

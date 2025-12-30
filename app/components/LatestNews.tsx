@@ -26,17 +26,17 @@ const newsItems = [
 
 export default function LatestNews() {
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-pureWhite">
       <div className="container-web3">
         {/* Header */}
         <div className="flex items-center justify-between mb-12">
-          <h2 className="text-web3-24 md:text-web3-36 font-medium text-[#212121]">
+          <h2 className="text-web3-24 md:text-web3-36 font-medium text-volcanic-900">
             The latest news
           </h2>
 
           <Link
             href="#blog"
-            className="inline-flex items-center gap-2 text-web3-14 font-medium text-[#212121] hover:text-[#71717a] transition-colors"
+            className="inline-flex items-center gap-2 text-web3-14 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors"
           >
             See more on the blog
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -65,13 +65,13 @@ export default function LatestNews() {
 
               {/* Meta */}
               <div className="flex items-center gap-2 mb-3">
-                <span className="text-web3-12 text-[#71717a]">
+                <span className="text-web3-12 text-neutral-50">
                   {item.author} - {item.date}
                 </span>
               </div>
 
               {/* Title */}
-              <h3 className="text-web3-18 font-medium text-[#212121] group-hover:text-[#71717a] transition-colors line-clamp-2">
+              <h3 className="text-web3-18 font-medium text-volcanic-900 group-hover:text-neutral-50 transition-colors line-clamp-2">
                 {item.title}
               </h3>
             </Link>

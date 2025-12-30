@@ -53,13 +53,13 @@ export default function DeveloperResources() {
           </div>
 
           {/* Right - Docs Panel */}
-          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+          <div className="bg-pureWhite rounded-2xl shadow-2xl overflow-hidden">
             {/* Header */}
             <div className="p-4 border-b">
               <div className="flex items-center gap-2">
-                <span className="text-[#FF7759] font-bold text-lg">⚡</span>
-                <span className="font-medium text-[#212121]">cohere docs</span>
-                <span className="ml-2 px-2 py-0.5 bg-gray-100 rounded text-sm text-gray-600">v2 API</span>
+                <span className="text-coral-500 font-bold text-lg">⚡</span>
+                <span className="font-medium text-volcanic-900">cohere docs</span>
+                <span className="ml-2 px-2 py-0.5 bg-neutral-100 rounded text-sm text-neutral-60">v2 API</span>
               </div>
             </div>
 
@@ -68,7 +68,7 @@ export default function DeveloperResources() {
               {["Guides and concepts", "API Reference", "Release Notes", "LLMU", "Cookbooks"].map((tab) => (
                 <button
                   key={tab}
-                  className="px-3 py-1.5 text-sm text-[#212121] whitespace-nowrap hover:bg-gray-100 rounded transition-colors"
+                  className="px-3 py-1.5 text-sm text-volcanic-900 whitespace-nowrap hover:bg-neutral-100 rounded transition-colors"
                 >
                   {tab}
                 </button>
@@ -81,7 +81,7 @@ export default function DeveloperResources() {
               <div className="w-48 border-r p-4 text-sm hidden md:block">
                 {docSections.map((section) => (
                   <div key={section.title} className="mb-4">
-                    <p className="font-medium text-[#212121] mb-2">{section.title}</p>
+                    <p className="font-medium text-volcanic-900 mb-2">{section.title}</p>
                     <ul className="space-y-1">
                       {section.items.map((item) => (
                         <li key={item}>
@@ -89,8 +89,8 @@ export default function DeveloperResources() {
                             onClick={() => setActiveSection(item)}
                             className={`w-full text-left px-2 py-1 rounded text-sm transition-colors ${
                               activeSection === item
-                                ? "bg-[#39594D] text-white"
-                                : "text-gray-600 hover:bg-gray-100"
+                                ? "bg-green-500 text-white"
+                                : "text-neutral-60 hover:bg-neutral-100"
                             }`}
                           >
                             {item}
@@ -104,9 +104,9 @@ export default function DeveloperResources() {
 
               {/* Main content */}
               <div className="flex-1 p-6">
-                <p className="text-sm text-[#39594D] mb-1">Get Started</p>
-                <h3 className="text-2xl font-medium text-[#212121] mb-4">Creating a client</h3>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm text-green-500 mb-1">Get Started</p>
+                <h3 className="text-2xl font-medium text-volcanic-900 mb-4">Creating a client</h3>
+                <p className="text-sm text-neutral-60 mb-4">
                   To start using all features available in the Cohere SDK first.
                 </p>
 
@@ -118,8 +118,8 @@ export default function DeveloperResources() {
                       onClick={() => setActiveTab(lang)}
                       className={`transition-colors ${
                         activeTab === lang
-                          ? "text-[#212121] font-medium border-b-2 border-[#212121]"
-                          : "text-gray-500 hover:text-[#212121]"
+                          ? "text-volcanic-900 font-medium border-b-2 border-volcanic-900"
+                          : "text-neutral-50 hover:text-volcanic-900"
                       }`}
                     >
                       {lang}
@@ -148,7 +148,7 @@ export default function DeveloperResources() {
                   </div>
                 </div>
 
-                <Link href="#source" className="inline-flex items-center gap-1 mt-4 text-sm text-[#39594D] hover:underline">
+                <Link href="#source" className="inline-flex items-center gap-1 mt-4 text-sm text-green-500 hover:underline">
                   Source
                   <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />

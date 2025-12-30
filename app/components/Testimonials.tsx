@@ -45,11 +45,11 @@ export default function Testimonials() {
   const testimonial = testimonials[currentSlide];
 
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-pureWhite">
       <div className="container-web3">
         {/* Header */}
         <div className="flex items-center justify-between mb-12">
-          <h2 className="text-web3-24 md:text-web3-36 font-medium text-[#212121]">
+          <h2 className="text-web3-24 md:text-web3-36 font-medium text-volcanic-900">
             Why leading teams trust Cohere
           </h2>
 
@@ -57,19 +57,19 @@ export default function Testimonials() {
           <div className="flex items-center gap-2">
             <button
               onClick={prevSlide}
-              className="w-10 h-10 rounded-full border border-[#E5E5E5] flex items-center justify-center hover:bg-gray-50 transition-colors"
+              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-marble transition-colors"
               aria-label="Previous"
             >
-              <svg className="w-5 h-5 text-[#212121]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-volcanic-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
             <button
               onClick={nextSlide}
-              className="w-10 h-10 rounded-full border border-[#E5E5E5] flex items-center justify-center hover:bg-gray-50 transition-colors"
+              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-marble transition-colors"
               aria-label="Next"
             >
-              <svg className="w-5 h-5 text-[#212121]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-volcanic-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
@@ -77,29 +77,29 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonial Card */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden border border-gray-200">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden border border-neutral-90">
           {/* Left - Quote */}
-          <div className="p-8 lg:p-12 bg-white flex flex-col">
+          <div className="p-8 lg:p-12 bg-pureWhite flex flex-col">
             {/* Company Logo */}
-            <div className="text-[#212121] mb-8">
+            <div className="text-volcanic-900 mb-8">
               {testimonial.logo}
             </div>
 
             {/* Quote */}
-            <blockquote className="text-web3-20 md:text-web3-24 text-[#212121] mb-8 flex-grow">
+            <blockquote className="text-web3-20 md:text-web3-24 text-volcanic-900 mb-8 flex-grow">
               &ldquo;{testimonial.quote}&rdquo;
             </blockquote>
 
             {/* Author */}
             <div className="mb-8">
-              <p className="text-[#212121] font-medium">— {testimonial.author}</p>
-              <p className="text-[#71717a] text-sm">{testimonial.role}</p>
+              <p className="text-volcanic-900 font-medium">— {testimonial.author}</p>
+              <p className="text-neutral-50 text-sm">{testimonial.role}</p>
             </div>
 
             {/* Link */}
             <Link
               href="#case-study"
-              className="inline-flex items-center gap-2 text-web3-14 font-medium text-[#212121] hover:text-[#71717a] transition-colors"
+              className="inline-flex items-center gap-2 text-web3-14 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors"
             >
               Read more
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -121,9 +121,9 @@ export default function Testimonials() {
 
         {/* Progress Bar */}
         <div className="mt-8 flex justify-center">
-          <div className="w-64 h-1 bg-gray-200 rounded-full overflow-hidden">
+          <div className="w-64 h-1 bg-neutral-90 rounded-full overflow-hidden">
             <div
-              className="h-full bg-[#FF7759] rounded-full transition-all duration-300"
+              className="h-full bg-coral-500 rounded-full transition-all duration-300"
               style={{ width: `${((currentSlide + 1) / testimonials.length) * 100}%` }}
             />
           </div>

@@ -46,11 +46,11 @@ const features = [
 
 export default function SafeFlexible() {
   return (
-    <section className="section-padding bg-white">
+    <section className="section-padding bg-pureWhite">
       <div className="container-web3">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-web3-36 md:text-web3-48 font-medium text-[#71717a]">
+          <h2 className="text-web3-36 md:text-web3-48 font-medium text-neutral-50">
             Safe. Flexible. Built for business.
           </h2>
         </div>
@@ -60,24 +60,24 @@ export default function SafeFlexible() {
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col">
               {/* Icon */}
-              <div className="mb-6 text-[#212121]">
+              <div className="mb-6 text-volcanic-900">
                 {feature.icon}
               </div>
 
               {/* Title */}
-              <h3 className="text-web3-20 font-medium text-[#212121] mb-3">
+              <h3 className="text-web3-20 font-medium text-volcanic-900 mb-3">
                 {feature.title}
               </h3>
 
               {/* Description */}
-              <p className="text-web3-16 text-[#71717a] mb-4 flex-grow">
+              <p className="text-web3-16 text-neutral-50 mb-4 flex-grow">
                 {feature.description}
               </p>
 
               {/* Link */}
               <Link
                 href={`#${feature.title.toLowerCase()}`}
-                className="inline-flex items-center gap-2 text-web3-14 font-medium text-[#212121] hover:text-[#71717a] transition-colors"
+                className="inline-flex items-center gap-2 text-web3-14 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors"
               >
                 Learn more
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

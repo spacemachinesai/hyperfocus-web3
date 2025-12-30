@@ -4,19 +4,46 @@
   /* Cohere exact colors */
   --color-pure-white: #FFFFFF;
   --color-marble: #FAFAFA;
+  --color-marble-500: #FAFAFA;
   --color-cream: #F5F5DC;
   --color-volcanic: #212121;
-  --color-neutral-90: #E5E5E5;
-  --color-neutral-80: #D4D4D4;
-  --color-neutral-50: #71717A;
-  --color-neutral-40: #52525B;
-  --color-neutral-10: #212121;
+  --color-volcanic-700: #424242;
+  --color-volcanic-900: #212121;
 
-  /* Cohere accent colors */
+  /* Neutral scale */
+  --color-neutral-15: #17171c;
+  --color-neutral-40: #52525B;
+  --color-neutral-50: #71717A;
+  --color-neutral-60: #616161;
+  --color-neutral-70: #757575;
+  --color-neutral-80: #D4D4D4;
+  --color-neutral-90: #E5E5E5;
+  --color-neutral-100: #F5F5F5;
+
+  /* Coral palette */
   --color-coral: #FF7759;
+  --color-coral-500: #FF7759;
+  --color-coral-700: #ca492d;
   --color-coral-light: #FFAD9B;
+  --color-coral-200: #ffd9d0;
+  --color-coral-100: #fff1f1;
+
+  /* Quartz palette (purple) */
+  --color-quartz-500: #b576c5;
+  --color-quartz-800: #754880;
+  --color-violet-500: #9b60aa;
+
+  /* Blue palette */
+  --color-blue-25: #e5ebff;
+  --color-blue-500: #4c6ee6;
+  --color-blue-700: #1e40af;
+  --color-blue-900: #142253;
+
+  /* Green */
   --color-green: #39594D;
+  --color-green-500: #39594D;
   --color-mushroom: #D7CFC1;
+  --color-mushroom-500: #D7CFC1;
 
   /* Background */
   --background: #ffffff;
@@ -28,16 +55,49 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
 
-  /* Cohere colors */
+  /* Cohere colors - full palette */
   --color-pureWhite: #FFFFFF;
   --color-marble: #FAFAFA;
+  --color-marble-500: #FAFAFA;
   --color-volcanic: #212121;
+  --color-volcanic-700: #424242;
+  --color-volcanic-900: #212121;
   --color-mushroom: #D7CFC1;
+  --color-mushroom-500: #D7CFC1;
+
+  /* Coral */
   --color-coral: #FF7759;
+  --color-coral-500: #FF7759;
+  --color-coral-700: #ca492d;
+  --color-coral-200: #ffd9d0;
+  --color-coral-100: #fff1f1;
+
+  /* Quartz (purple) */
+  --color-quartz-500: #b576c5;
+  --color-quartz-800: #754880;
+  --color-violet-500: #9b60aa;
+
+  /* Blue */
+  --color-blue-25: #e5ebff;
+  --color-blue-500: #4c6ee6;
+  --color-blue-700: #1e40af;
+  --color-blue-900: #142253;
+
+  /* Green */
   --color-green: #39594D;
+  --color-green-500: #39594D;
+
+  /* Neutral scale */
   --color-neutral-10: #212121;
+  --color-neutral-15: #17171c;
+  --color-neutral-40: #52525B;
   --color-neutral-50: #71717A;
+  --color-neutral-60: #616161;
+  --color-neutral-65: #a1a1aa;
+  --color-neutral-70: #757575;
+  --color-neutral-80: #D4D4D4;
   --color-neutral-90: #E5E5E5;
+  --color-neutral-100: #F5F5F5;
 }
 
 body {
@@ -58,7 +118,8 @@ html {
   background: rgba(255, 119, 89, 0.3);
 }
 
-/* Custom Cohere typography */
+/* Custom Cohere typography - full scale */
+.text-web3-7 { font-size: 7px; line-height: 1.2; }
 .text-web3-12 { font-size: 12px; line-height: 1.4; }
 .text-web3-14 { font-size: 14px; line-height: 1.5; }
 .text-web3-16 { font-size: 16px; line-height: 1.5; }
@@ -71,8 +132,28 @@ html {
 .text-web3-40 { font-size: 40px; line-height: 1.1; }
 .text-web3-48 { font-size: 48px; line-height: 1.1; }
 .text-web3-56 { font-size: 56px; line-height: 1.05; }
+.text-web3-60 { font-size: 60px; line-height: 1.05; }
 .text-web3-64 { font-size: 64px; line-height: 1.05; }
 .text-web3-72 { font-size: 72px; line-height: 1; }
+
+/* Heading variants */
+.text-web3-24-heading { font-size: 24px; line-height: 1.2; font-weight: 500; }
+.text-web3-32-heading { font-size: 32px; line-height: 1.15; font-weight: 500; }
+.text-web3-48-alt { font-size: 48px; line-height: 1.05; font-weight: 400; letter-spacing: -0.02em; }
+
+/* Eyebrow text style */
+.text-web3-14-eyebrow {
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Icon sizes */
+.text-icon-sm { font-size: 12px; }
+.text-icon-md { font-size: 16px; }
+.text-icon-lg { font-size: 20px; }
 
 .font-body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -84,7 +165,6 @@ html {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-coral);
 }
 
 /* Logo carousel animation - Cohere style */
@@ -110,17 +190,21 @@ html {
   z-index: 100;
 }
 
-/* Button styles */
+/* Button styles - Cohere exact */
 .btn-primary {
   background: var(--color-volcanic);
   color: white;
   padding: 12px 24px;
-  border-radius: 32px;
+  border-radius: 9999px;
   font-size: 14px;
   font-weight: 500;
   transition: all 0.2s ease;
   border: none;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .btn-primary:hover {
@@ -132,17 +216,67 @@ html {
   background: transparent;
   color: var(--color-volcanic);
   padding: 12px 24px;
-  border-radius: 32px;
+  border-radius: 9999px;
   font-size: 14px;
   font-weight: 500;
   transition: all 0.2s ease;
-  border: 1px solid var(--color-mushroom);
+  border: 1px solid var(--color-neutral-80);
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .btn-secondary:hover {
   border-color: var(--color-volcanic);
 }
+
+/* Nav link with gradient underline */
+.nav-link-gradient {
+  position: relative;
+}
+
+.nav-link-gradient::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 1px;
+  width: 0;
+  background: linear-gradient(to right, var(--color-coral-500), var(--color-violet-500), var(--color-blue-500));
+  transition: width 0.3s ease;
+}
+
+.nav-link-gradient:hover::after {
+  width: 100%;
+}
+
+/* NEW badge */
+.badge-new {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 6px;
+  background: var(--color-blue-25);
+  color: var(--color-volcanic);
+  font-size: 7px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 2px;
+}
+
+/* Product indicator dots */
+.product-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.product-dot-blue { background: var(--color-blue-500); }
+.product-dot-quartz { background: var(--color-quartz-500); }
+.product-dot-coral { background: var(--color-coral-500); }
 
 /* Card hover effect */
 .card-hover {
@@ -152,6 +286,70 @@ html {
 .card-hover:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+/* Image scale hover - Cohere style */
+.img-hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.group:hover .img-hover-scale,
+.img-hover-scale:hover {
+  transform: scale(1.2);
+}
+
+/* Gradient overlays */
+.gradient-overlay-bottom {
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+}
+
+.gradient-overlay-green {
+  background: linear-gradient(180deg, rgba(243, 227, 245, 0) 3.88%, #3b524a 56.2%);
+}
+
+.gradient-overlay-blue {
+  background: linear-gradient(180deg, rgba(243, 227, 245, 0) 3.88%, #465ecb 56.2%);
+}
+
+/* Mega menu styles */
+.mega-menu {
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 5px);
+  transform: translateX(-50%) translateY(-8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  border-radius: 16px;
+  border: 1px solid var(--color-neutral-90);
+  background: white;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.group:hover .mega-menu {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Hover background for menu items */
+.menu-item-hover {
+  position: relative;
+}
+
+.menu-item-hover::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 8px;
+  background: var(--color-neutral-90);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.menu-item-hover:hover::before {
+  opacity: 0.9;
 }
 
 /* Link with arrow animation */

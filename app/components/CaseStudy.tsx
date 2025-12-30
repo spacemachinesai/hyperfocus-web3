@@ -46,7 +46,7 @@ export default function CaseStudy() {
             {/* CTA */}
             <Link
               href="#north"
-              className="inline-flex items-center px-6 py-3 bg-white text-[#212121] rounded-full font-medium hover:bg-white/90 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-pureWhite text-volcanic-900 rounded-full font-medium hover:bg-white/90 transition-colors"
             >
               Go North
             </Link>
@@ -96,43 +96,43 @@ export default function CaseStudy() {
                   </div>
 
                   {/* Data table preview */}
-                  <div className="bg-white rounded-lg overflow-hidden text-sm">
-                    <div className="grid grid-cols-4 gap-4 p-3 bg-gray-50 border-b font-medium text-[#212121]">
+                  <div className="bg-pureWhite rounded-lg overflow-hidden text-sm">
+                    <div className="grid grid-cols-4 gap-4 p-3 bg-marble border-b font-medium text-volcanic-900">
                       <span></span>
                       <span className="text-[#4ade80]">Jan</span>
                       <span className="text-[#4ade80]">Feb</span>
                       <span className="text-[#4ade80]">Mar</span>
                     </div>
                     <div className="divide-y">
-                      <div className="grid grid-cols-4 gap-4 p-3 text-[#212121]">
-                        <span className="text-gray-600">Genesis sales</span>
+                      <div className="grid grid-cols-4 gap-4 p-3 text-volcanic-900">
+                        <span className="text-neutral-60">Genesis sales</span>
                         <span>$49,500.83</span>
                         <span>$44,890.34</span>
                         <span>$51,994.95</span>
                       </div>
-                      <div className="grid grid-cols-4 gap-4 p-3 text-[#212121]">
-                        <span className="text-gray-600">Mercury sales</span>
+                      <div className="grid grid-cols-4 gap-4 p-3 text-volcanic-900">
+                        <span className="text-neutral-60">Mercury sales</span>
                         <span>$13,758.20</span>
                         <span>$34,673.78</span>
                         <span>$71,057.22</span>
                       </div>
-                      <div className="grid grid-cols-4 gap-4 p-3 text-[#212121]">
-                        <span className="text-gray-600">Eclipse sales</span>
-                        <span>$28,456.12</span>
-                        <span>$31,289.45</span>
-                        <span>$42,678.90</span>
+                      <div className="grid grid-cols-4 gap-4 p-3 text-volcanic-900">
+                        <span className="text-neutral-60">Eclipse sales</span>
+                        <span>$1,580.53</span>
+                        <span>$2,289.88</span>
+                        <span>$1,954.68</span>
                       </div>
-                      <div className="grid grid-cols-4 gap-4 p-3 text-[#212121]">
-                        <span className="text-gray-600">Odyssey sales</span>
-                        <span>$67,234.56</span>
-                        <span>$72,891.23</span>
-                        <span>$85,432.10</span>
+                      <div className="grid grid-cols-4 gap-4 p-3 text-volcanic-900">
+                        <span className="text-neutral-60">Odyssey sales</span>
+                        <span>$30,756.21</span>
+                        <span>$67,146.89</span>
+                        <span>$34,850.34</span>
                       </div>
-                      <div className="grid grid-cols-4 gap-4 p-3 text-[#212121]">
-                        <span className="text-gray-600">Nova sales</span>
-                        <span>$19,876.34</span>
-                        <span>$23,456.78</span>
-                        <span>$27,890.12</span>
+                      <div className="grid grid-cols-4 gap-4 p-3 text-volcanic-900">
+                        <span className="text-neutral-60">Nova sales</span>
+                        <span>$29,670.87</span>
+                        <span>$34,675.82</span>
+                        <span>$27,805.89</span>
                       </div>
                     </div>
                   </div>
