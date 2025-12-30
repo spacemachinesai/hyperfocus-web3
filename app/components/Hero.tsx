@@ -39,9 +39,9 @@ export default function Hero() {
         </div>
 
         {/* Demo Cards - Cohere exact sizing */}
-        <div className="grid grid-cols-1 lg:grid-cols-[1.95fr_1fr] gap-6">
-          {/* Left Card - Financial Analysis Agent - aspect 1.95:1 */}
-          <div className="relative rounded-card overflow-hidden bg-gradient-to-br from-[#1a1a2e] via-[#2d1b4e] to-[#1a1a2e]" style={{ aspectRatio: '1.95/1' }}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {/* Left Card - Financial Analysis Agent - aspect-[2274/1120] */}
+          <div className="relative rounded-card overflow-hidden bg-gradient-to-br from-[#1a1a2e] via-[#2d1b4e] to-[#1a1a2e] aspect-[2274/1120] lg:max-h-[750px] xl:max-h-[540px]">
             {/* Abstract Background */}
             <div className="absolute inset-0">
               <Image
@@ -104,8 +104,8 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Card - Woman working on laptop - aspect 0.96:1 */}
-          <div className="relative rounded-card overflow-hidden" style={{ aspectRatio: '0.96/1' }}>
+          {/* Right Card - Woman working on laptop - aspect-[9/10] with flex */}
+          <div className="relative rounded-card overflow-hidden h-64 md:h-[560px] aspect-[9/10] md:aspect-[3/2] flex-[1.53]">
             <Image
               src="/images/60898fc5b86d38de0dafde5f3520c3c9f19a0a9d-880x1120.png"
               alt="Woman speaking on the phone while working"
