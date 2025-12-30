@@ -5,13 +5,13 @@ import { useState } from "react";
 
 const docSections = [
   { title: "Get Started", items: ["Introduction", "Installation", "Creating a client", "Quickstart", "Playground", "FAQs"] },
-  { title: "Models", items: ["An Overview of Cohere's Models", "Command", "Embed", "Rerank", "Aya"] },
+  { title: "Models", items: ["An Overview of hyperfocus.tech's Models", "Command", "Embed", "Rerank", "Aya"] },
   { title: "Text Generation", items: [] },
 ];
 
-const codeExample = `import cohere
+const codeExample = `import hyperfocus
 
-co = cohere.ClientV2(api_key="YOUR_API_KEY")`;
+hf = hyperfocus.ClientV2(api_key="YOUR_API_KEY")`;
 
 export default function DeveloperResources() {
   const [activeSection, setActiveSection] = useState("Creating a client");
@@ -58,7 +58,7 @@ export default function DeveloperResources() {
             <div className="p-4 border-b">
               <div className="flex items-center gap-2">
                 <span className="text-coral-500 font-bold text-lg">⚡</span>
-                <span className="font-medium text-volcanic-900">cohere docs</span>
+                <span className="font-medium text-volcanic-900">hyperfocus docs</span>
                 <span className="ml-2 px-2 py-0.5 bg-neutral-100 rounded text-sm text-neutral-60">v2 API</span>
               </div>
             </div>
@@ -107,7 +107,7 @@ export default function DeveloperResources() {
                 <p className="text-sm text-green-500 mb-1">Get Started</p>
                 <h3 className="text-2xl font-medium text-volcanic-900 mb-4">Creating a client</h3>
                 <p className="text-sm text-neutral-60 mb-4">
-                  To start using all features available in the Cohere SDK first.
+                  To start using all features available in hyperfocus.tech SDK first.
                 </p>
 
                 {/* Language tabs */}
@@ -132,7 +132,7 @@ export default function DeveloperResources() {
                   <div className="text-gray-400">
                     <span className="text-purple-400">1</span>{"  "}
                     <span className="text-pink-400">import</span>{" "}
-                    <span className="text-green-400">cohere</span>
+                    <span className="text-green-400">hyperfocus</span>
                   </div>
                   <div className="text-gray-400">
                     <span className="text-purple-400">2</span>
@@ -141,7 +141,7 @@ export default function DeveloperResources() {
                     <span className="text-purple-400">3</span>{"  "}
                     <span className="text-blue-300">co</span>{" "}
                     <span className="text-pink-400">=</span>{" "}
-                    <span className="text-green-400">cohere</span>.
+                    <span className="text-green-400">hyperfocus</span>.
                     <span className="text-yellow-300">ClientV2</span>(
                     <span className="text-blue-300">api_key</span>=
                     <span className="text-orange-300">&quot;YOUR_API_KEY&quot;</span>)

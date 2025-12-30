@@ -67,7 +67,7 @@ export default function Footer() {
               We&apos;ll keep you up to date with the latest.
             </p>
             <p className="text-web3-16 text-neutral-65 mb-6">
-              Enter your business email below to receive updates from Cohere. Please refer to our{" "}
+              Enter your business email below to receive updates from hyperfocus.tech. Please refer to our{" "}
               <Link href="#" className="underline hover:text-white">privacy policy</Link>{" "}
               for details or to contact us. You can unsubscribe at any time.
             </p>
@@ -150,7 +150,7 @@ export default function Footer() {
           {/* Copyright and Links */}
           <div className="flex flex-wrap items-center justify-center gap-6">
             <span className="text-web3-12 text-neutral-65">
-              Cohere &copy; {new Date().getFullYear()}
+              hyperfocus.tech &copy; {new Date().getFullYear()}
             </span>
             <Link href="#" className="text-web3-12 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out">
               Privacy

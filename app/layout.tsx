@@ -9,19 +9,19 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Enterprise AI: Private, Secure, Customizable | Cohere",
-  description: "Cohere builds powerful models and AI solutions enabling enterprises to automate processes, empower employees, and turn fragmented data into actionable insights.",
+  title: "Run e-commerce ops without the ops team | hyperfocus.tech",
+  description: "AI handles the spreadsheets. You handle the business. Real profit by channel, inventory intelligence, and AI recommendations for e-commerce sellers.",
   openGraph: {
-    title: "Enterprise AI: Private, Secure, Customizable | Cohere",
-    description: "Cohere builds powerful models and AI solutions enabling enterprises to automate processes, empower employees, and turn fragmented data into actionable insights.",
-    url: "https://cohere.com/",
-    siteName: "Cohere",
+    title: "Run e-commerce ops without the ops team | hyperfocus.tech",
+    description: "AI handles the spreadsheets. You handle the business. Real profit by channel, inventory intelligence, and AI recommendations for e-commerce sellers.",
+    url: "https://hyperfocus.tech/",
+    siteName: "hyperfocus.tech",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Enterprise AI: Private, Secure, Customizable | Cohere",
-    description: "Cohere builds powerful models and AI solutions enabling enterprises to automate processes, empower employees, and turn fragmented data into actionable insights.",
+    title: "Run e-commerce ops without the ops team | hyperfocus.tech",
+    description: "AI handles the spreadsheets. You handle the business. Real profit by channel, inventory intelligence, and AI recommendations for e-commerce sellers.",
   },
 };
 

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  /* Cohere exact colors */
+  /* Hyperfocus exact colors */
   --color-pure-white: #FFFFFF;
   --color-marble: #FAFAFA;
   --color-marble-500: #FAFAFA;
@@ -55,7 +55,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
 
-  /* Cohere colors - full palette */
+  /* Hyperfocus colors - full palette */
   --color-pureWhite: #FFFFFF;
   --color-marble: #FAFAFA;
   --color-marble-500: #FAFAFA;
@@ -118,7 +118,7 @@ html {
   background: rgba(255, 119, 89, 0.3);
 }
 
-/* Custom Cohere typography - exact from reference */
+/* Custom Hyperfocus typography - exact from reference */
 .text-web3-7 { font-size: 0.5rem; line-height: 1.4; letter-spacing: 0.02em; }
 .text-web3-12 { font-size: 0.75rem; line-height: 1.4; }
 .text-web3-14 { font-size: 0.875rem; line-height: 1.4; letter-spacing: 0; }
@@ -169,7 +169,7 @@ html {
   text-transform: uppercase;
 }
 
-/* Logo carousel animation - Cohere style */
+/* Logo carousel animation - Hyperfocus style */
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -192,7 +192,7 @@ html {
   z-index: 100;
 }
 
-/* Button styles - Cohere exact with ease-in-out */
+/* Button styles - Hyperfocus exact with ease-in-out */
 .btn-primary {
   background: var(--color-volcanic);
   color: white;
@@ -279,7 +279,7 @@ html {
 .product-dot-quartz { background: var(--color-quartz-500); }
 .product-dot-coral { background: var(--color-coral-500); }
 
-/* Card hover effect - Cohere style (subtle shadow only) */
+/* Card hover effect - Hyperfocus style (subtle shadow only) */
 .card-hover {
   transition: all 0.3s ease-in-out;
 }
@@ -288,7 +288,7 @@ html {
   box-shadow: 0 12px 24px rgba(0,0,0,0.1);
 }
 
-/* Image scale hover - Cohere exact: scale-[1.02] with duration-300 ease-in-out */
+/* Image scale hover - Hyperfocus exact: scale-[1.02] with duration-300 ease-in-out */
 .img-hover-scale {
   transition: all 0.3s ease-in-out;
 }
@@ -311,7 +311,7 @@ html {
   background: linear-gradient(180deg, rgba(243, 227, 245, 0) 3.88%, #465ecb 56.2%);
 }
 
-/* Mega menu styles - Cohere exact with ease-in-out */
+/* Mega menu styles - Hyperfocus exact with ease-in-out */
 .mega-menu {
   position: absolute;
   left: 50%;
@@ -332,7 +332,7 @@ html {
   pointer-events: auto;
 }
 
-/* Hover background for menu items - Cohere exact */
+/* Hover background for menu items - Hyperfocus exact */
 .menu-item-hover {
   position: relative;
 }
@@ -352,7 +352,7 @@ html {
   opacity: 0.9;
 }
 
-/* Link with arrow animation - Cohere exact */
+/* Link with arrow animation - Hyperfocus exact */
 .link-arrow {
   display: inline-flex;
   align-items: center;
@@ -416,7 +416,7 @@ html {
 .stagger-4 { animation-delay: 0.4s; }
 .stagger-5 { animation-delay: 0.5s; }
 
-/* Custom container - Cohere style full-width with padding */
+/* Custom container - Hyperfocus style full-width with padding */
 /* Reference: px-4 lg:px-10 = 16px mobile, 40px on lg (1024px+) */
 .container-web3 {
   width: 100%;
@@ -445,7 +445,7 @@ html {
   }
 }
 
-/* Section padding - Cohere exact */
+/* Section padding - Hyperfocus exact */
 .section-padding {
   padding: 40px 0;
 }
@@ -456,12 +456,12 @@ html {
   }
 }
 
-/* Card border radius - Cohere exact 20px */
+/* Card border radius - Hyperfocus exact 20px */
 .rounded-card {
   border-radius: 20px;
 }
 
-/* Hero section specific - exact from Cohere: pt-28 md:pt-40 pb-12 md:pb-20 */
+/* Hero section specific - exact from Hyperfocus: pt-28 md:pt-40 pb-12 md:pb-20 */
 .hero-padding {
   padding-top: 7rem;    /* pt-28 = 112px */
   padding-bottom: 3rem; /* pb-12 = 48px */
@@ -474,16 +474,16 @@ html {
   }
 }
 
-/* Cohere max-width containers - exact values */
+/* Hyperfocus max-width containers - exact values */
 .max-w-web3-full-screen { max-width: 2280px; }
 .max-w-web3-internal-wrapper { max-width: 1920px; }
 
-/* Transition delays - Cohere patterns */
+/* Transition delays - Hyperfocus patterns */
 .delay-500 { transition-delay: 500ms; }
 .delay-700 { transition-delay: 700ms; }
 .delay-800 { transition-delay: 800ms; }
 
-/* Cohere transition presets */
+/* Hyperfocus transition presets */
 .transition-cohere {
   transition: all 0.3s ease-in-out;
 }
@@ -492,7 +492,7 @@ html {
   transition: opacity 0.5s ease-in-out;
 }
 
-/* Cohere opacity states for animations */
+/* Hyperfocus opacity states for animations */
 .opacity-enter {
   opacity: 0;
 }

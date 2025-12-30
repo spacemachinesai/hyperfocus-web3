@@ -59,8 +59,8 @@ const solutionsMenu = {
 // Research menu data
 const researchMenu = {
   featured: {
-    title: "Cohere Labs",
-    description: "Cohere's research lab that seeks to solve complex ML problems",
+    title: "hyperfocus Labs",
+    description: "Our research lab that seeks to solve complex e-commerce analytics problems",
     image: "/images/research-labs.png",
   },
   model: ["Aya"],
@@ -115,7 +115,7 @@ export default function Header() {
         <Link href="/" className="mr-auto flex flex-1 justify-start">
           <Image
             src="/images/logo.svg"
-            alt="Cohere"
+            alt="hyperfocus.tech"
             width={118}
             height={20}
             className="hidden h-5 w-[118px] md:block"
@@ -123,7 +123,7 @@ export default function Header() {
           />
           <Image
             src="/images/logo_mobile.svg"
-            alt="Cohere"
+            alt="hyperfocus.tech"
             width={32}
             height={32}
             className="h-8 w-8 md:hidden"

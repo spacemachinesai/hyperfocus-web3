@@ -5,21 +5,21 @@ import Link from "next/link";
 
 const newsItems = [
   {
-    author: "Cohere Team",
+    author: "hyperfocus.tech",
     date: "Dec 11, 2025",
-    title: "Introducing Rerank 4: Cohere's most powerful reranker yet",
+    title: "Introducing Real Profit Analytics: See your true margins by channel",
     image: "/images/251211_Rerank4Launch_Hero.png",
   },
   {
-    author: "Cohere Team",
+    author: "hyperfocus.tech",
     date: "Nov 27, 2025",
-    title: "Cohere Expands Partnership with SAP to Provide Europe Sovereign AI Solutions",
+    title: "How AI recommendations helped sellers save 40% on inventory costs",
     image: "/images/250501_blog-social-image_SAP-partnership-2.png",
   },
   {
-    author: "Cohere Team",
+    author: "hyperfocus.tech",
     date: "Oct 07, 2025",
-    title: "Announcing the Cohere Partner Program: Boosting enterprise AI",
+    title: "The complete guide to multi-channel e-commerce analytics",
     image: "/images/cohere_partner_program_blog_hero_1920x960.jpg",
   },
 ];

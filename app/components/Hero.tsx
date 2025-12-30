@@ -32,7 +32,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Demo Cards - Cohere exact sizing */}
+        {/* Demo Cards - Hyperfocus exact sizing */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Left Card - Financial Analysis Agent - aspect-[2274/1120] */}
           <div className="relative rounded-[20px] overflow-hidden bg-gradient-to-br from-[#1a1a2e] via-[#2d1b4e] to-[#1a1a2e] aspect-[2274/1120] lg:max-h-[750px] xl:max-h-[540px]">
