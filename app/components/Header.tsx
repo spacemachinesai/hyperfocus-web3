@@ -18,9 +18,9 @@ export default function Header() {
           <Image
             src="/images/logo.svg"
             alt="hyperfocus.tech"
-            width={118}
-            height={20}
-            className="hidden h-5 w-[118px] md:block"
+            width={150}
+            height={24}
+            className="hidden h-6 w-[150px] md:block"
             priority
           />
           <Image
