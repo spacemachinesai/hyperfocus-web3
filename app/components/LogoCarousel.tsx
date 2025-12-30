@@ -14,7 +14,7 @@ export default function LogoCarousel() {
   return (
     <section className="pb-10 bg-pureWhite">
       <div className="container-web3">
-        <p className="text-web3-16 text-neutral-50 text-center mb-12">
+        <p className="text-web3-16 text-neutral-50 text-center mb-10">
           Trusted by industry leaders and developers worldwide
         </p>
 

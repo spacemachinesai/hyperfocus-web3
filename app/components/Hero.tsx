@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="relative bg-pureWhite hero-padding text-volcanic-900">
       <div className="container-web3">
         {/* Centered Content */}
-        <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-16">
+        <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-14">
           {/* Main Headline */}
           <h1 className="text-web3-40 lg:text-web3-72 font-medium text-volcanic-900 mb-6">
             Your next breakthrough,
@@ -17,7 +17,7 @@ export default function Hero() {
           </h1>
 
           {/* Subheadline */}
-          <p className="text-web3-18 md:text-web3-20 text-neutral-50 mb-8 max-w-2xl">
+          <p className="text-web3-18 md:text-web3-20 text-neutral-50 mb-6 max-w-2xl">
             Cohere is where powerful AI meets practical business solutions — so you can work smarter.
           </p>
 

@@ -18,12 +18,12 @@ export default function CaseStudy() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
       </div>
 
-      <div className="container-web3 relative z-10 pt-10 pb-12 md:pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="container-web3 relative z-10 pt-12 pb-12 md:pb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Content */}
           <div className="text-white">
             {/* Logo */}
-            <div className="flex items-center gap-2 mb-8">
+            <div className="flex items-center gap-2 mb-6">
               <svg className="w-8 h-8" viewBox="0 0 32 32" fill="currentColor">
                 <circle cx="8" cy="16" r="4" />
                 <circle cx="24" cy="16" r="4" />
@@ -39,7 +39,7 @@ export default function CaseStudy() {
             </h2>
 
             {/* Description */}
-            <p className="text-web3-18 text-white/80 mb-8">
+            <p className="text-web3-18 text-white/80 mb-6">
               From scattered tools to seamless action — North brings everything together so your work just works.
             </p>
 

@@ -46,7 +46,7 @@ export default function Industries() {
     <section className="pt-12 md:pt-20 pb-12 md:pb-20 bg-pureWhite">
       <div className="container-web3">
         {/* Header */}
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex items-center justify-between mb-6">
           <h2 className="text-web3-24 md:text-web3-36 font-medium text-volcanic-900">
             Powering progress across industries
           </h2>

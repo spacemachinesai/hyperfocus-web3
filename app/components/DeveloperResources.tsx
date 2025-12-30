@@ -23,13 +23,13 @@ export default function DeveloperResources() {
       <div className="absolute inset-0 bg-gradient-to-br from-[#1e3a8a] via-[#3730a3] to-[#4c1d95]" />
 
       <div className="container-web3 relative z-10 pb-16 md:pb-36">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Left Content */}
           <div className="text-white">
             <h2 className="text-web3-36 md:text-web3-48 font-medium mb-6">
               Developer resources
             </h2>
-            <p className="text-web3-18 text-white/80 mb-8">
+            <p className="text-web3-18 text-white/80 mb-6">
               Find everything you need to start building, from API access to deep technical docs, and try our models in the Playground.
             </p>
 

@@ -26,10 +26,10 @@ const newsItems = [
 
 export default function LatestNews() {
   return (
-    <section className="pt-10 pb-12 md:pb-20 bg-pureWhite">
+    <section className="pt-12 md:pt-20 pb-12 md:pb-20 bg-pureWhite">
       <div className="container-web3">
         {/* Header */}
-        <div className="flex items-center justify-between mb-12">
+        <div className="flex items-center justify-between mb-10">
           <h2 className="text-web3-24 md:text-web3-36 font-medium text-volcanic-900">
             The latest news
           </h2>

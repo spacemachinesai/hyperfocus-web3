@@ -57,7 +57,7 @@ export default function Footer() {
     <footer className="bg-neutral-15 text-white">
       {/* Main Footer */}
       <div className="container-web3 pt-12 md:pt-20 pb-12 md:pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-14">
           {/* Newsletter Section - Left */}
           <div className="lg:col-span-4">
             <h3 className="text-web3-20 font-medium text-coral-500 mb-2">

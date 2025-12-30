@@ -46,17 +46,17 @@ const features = [
 
 export default function SafeFlexible() {
   return (
-    <section className="pt-16 md:pt-36 pb-12 md:pb-20 bg-pureWhite">
+    <section className="pt-12 md:pt-20 pb-12 md:pb-20 bg-pureWhite">
       <div className="container-web3">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-14">
           <h2 className="text-web3-36 md:text-web3-48 font-medium text-neutral-50">
             Safe. Flexible. Built for business.
           </h2>
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-10">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col">
               {/* Icon */}

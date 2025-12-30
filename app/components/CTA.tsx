@@ -18,7 +18,7 @@ export default function CTA() {
 
       <div className="container-web3 relative z-10">
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
-          <h2 className="text-web3-36 md:text-web3-48 lg:text-web3-56 font-medium text-white mb-8">
+          <h2 className="text-web3-36 md:text-web3-48 lg:text-web3-56 font-medium text-white mb-6">
             Ready to put AI to work?
           </h2>
 

@@ -45,10 +45,10 @@ export default function Testimonials() {
   const testimonial = testimonials[currentSlide];
 
   return (
-    <section className="pt-16 md:pt-24 pb-12 md:pb-20 bg-pureWhite">
+    <section className="pt-12 md:pt-20 pb-12 md:pb-20 bg-pureWhite">
       <div className="container-web3">
         {/* Header */}
-        <div className="flex items-center justify-between mb-12">
+        <div className="flex items-center justify-between mb-10">
           <h2 className="text-web3-24 md:text-web3-36 font-medium text-volcanic-900">
             Why leading teams trust Cohere
           </h2>
@@ -81,17 +81,17 @@ export default function Testimonials() {
           {/* Left - Quote */}
           <div className="p-8 lg:p-12 bg-pureWhite flex flex-col">
             {/* Company Logo */}
-            <div className="text-volcanic-900 mb-8">
+            <div className="text-volcanic-900 mb-6">
               {testimonial.logo}
             </div>
 
             {/* Quote */}
-            <blockquote className="text-web3-20 md:text-web3-24 text-volcanic-900 mb-8 flex-grow">
+            <blockquote className="text-web3-20 md:text-web3-24 text-volcanic-900 mb-6 flex-grow">
               &ldquo;{testimonial.quote}&rdquo;
             </blockquote>
 
             {/* Author */}
-            <div className="mb-8">
+            <div className="mb-6">
               <p className="text-volcanic-900 font-medium">— {testimonial.author}</p>
               <p className="text-neutral-50 text-sm">{testimonial.role}</p>
             </div>

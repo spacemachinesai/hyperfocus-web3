@@ -40,13 +40,13 @@ export default function Models() {
     <section className="pt-12 md:pt-20 pb-16 md:pb-36 bg-pureWhite">
       <div className="container-web3">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-14">
           <h2 className="text-web3-36 md:text-web3-48 font-medium text-neutral-50">
             Our models. All business.
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
           {/* Left - Chat Demo */}
           <div className="bg-neutral-90 rounded-[20px] p-8">
             {/* User message */}
