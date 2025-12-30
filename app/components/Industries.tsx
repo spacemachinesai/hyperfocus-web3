@@ -86,7 +86,7 @@ export default function Industries() {
                 src={industry.image}
                 alt={industry.title}
                 fill
-                className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-[1.02]"
+                className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-[1.2]"
               />
               <div className={`absolute inset-0 bg-gradient-to-t ${industry.color} to-transparent`} />
               <div className="absolute inset-0 p-6 flex flex-col justify-start">

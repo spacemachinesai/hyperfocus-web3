@@ -293,7 +293,7 @@ html {
 
 .group:hover .img-hover-scale,
 .img-hover-scale:hover {
-  transform: scale(1.02);
+  transform: scale(1.2);
 }
 
 /* Gradient overlays */
@@ -418,7 +418,7 @@ html {
 /* Reference: px-4 lg:px-10 = 16px mobile, 40px on lg (1024px+) */
 .container-web3 {
   width: 100%;
-  max-width: none;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 0 16px;
 }
