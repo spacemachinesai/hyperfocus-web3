@@ -11,29 +11,23 @@ export default function Hero() {
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-14">
           {/* Main Headline */}
           <h1 className="text-web3-40 lg:text-web3-72 font-medium text-volcanic-900 mb-6">
-            Your next breakthrough,
+            Run e-commerce ops
             <br />
-            powered by AI
+            without the ops team.
           </h1>
 
           {/* Subheadline */}
           <p className="text-web3-18 md:text-web3-20 text-neutral-50 mb-6 max-w-2xl">
-            Cohere is where powerful AI meets practical business solutions — so you can work smarter.
+            AI handles the spreadsheets. You handle the business.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <Link
-              href="#demo"
+              href="#early-access"
               className="btn-primary"
             >
-              Request a demo
-            </Link>
-            <Link
-              href="#products"
-              className="text-web3-16 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors duration-300 ease-in-out"
-            >
-              Explore products
+              Get early access
             </Link>
           </div>
         </div>
