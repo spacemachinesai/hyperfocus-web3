@@ -96,7 +96,7 @@ export default function Footer() {
           <div className="lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-8">
             {Object.entries(footerLinks).map(([category, links], index) => (
               <div key={category}>
-                <h4 className="text-web3-14 font-medium mb-4 flex items-center gap-1">
+                <h4 className="text-web3-16 font-medium mb-4 flex items-center gap-1">
                   {category}
                   {index === 0 && (
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -109,7 +109,7 @@ export default function Footer() {
                     <li key={link.label}>
                       <Link
                         href={link.href}
-                        className="text-web3-14 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out"
+                        className="text-web3-16 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out"
                       >
                         {link.label}
                       </Link>
@@ -149,19 +149,19 @@ export default function Footer() {
 
           {/* Copyright and Links */}
           <div className="flex flex-wrap items-center justify-center gap-6">
-            <span className="text-web3-14 text-neutral-65">
+            <span className="text-web3-16 text-neutral-65">
               Cohere &copy; {new Date().getFullYear()}
             </span>
-            <Link href="#" className="text-web3-14 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out">
+            <Link href="#" className="text-web3-16 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out">
               Privacy
             </Link>
-            <Link href="#" className="text-web3-14 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out">
+            <Link href="#" className="text-web3-16 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out">
               Terms of Use
             </Link>
-            <Link href="#" className="text-web3-14 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out">
+            <Link href="#" className="text-web3-16 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out">
               Manage Cookies
             </Link>
-            <button className="text-web3-14 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out flex items-center gap-1">
+            <button className="text-web3-16 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out flex items-center gap-1">
               English
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
