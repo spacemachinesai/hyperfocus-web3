@@ -57,7 +57,7 @@ export default function Testimonials() {
           <div className="flex items-center gap-2">
             <button
               onClick={prevSlide}
-              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-marble transition-colors duration-300 ease-in-out"
+              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-neutral-90 transition-opacity duration-300 ease-in-out"
               aria-label="Previous"
             >
               <svg className="w-5 h-5 text-volcanic-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -66,7 +66,7 @@ export default function Testimonials() {
             </button>
             <button
               onClick={nextSlide}
-              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-marble transition-colors duration-300 ease-in-out"
+              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-neutral-90 transition-opacity duration-300 ease-in-out"
               aria-label="Next"
             >
               <svg className="w-5 h-5 text-volcanic-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -77,7 +77,7 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonial Card */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-card overflow-hidden border border-neutral-90">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-[20px] overflow-hidden border border-neutral-90">
           {/* Left - Quote */}
           <div className="p-8 lg:p-12 bg-pureWhite flex flex-col">
             {/* Company Logo */}

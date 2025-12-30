@@ -27,7 +27,7 @@ export default function LogoCarousel() {
                 alt={logo.alt}
                 width={240}
                 height={90}
-                className="h-[60px] w-[170px] xl:h-[90px] xl:w-[240px] object-contain grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300 ease-in-out"
+                className="h-[60px] w-[170px] xl:h-[90px] xl:w-[240px] object-contain opacity-100 transition-opacity duration-300 ease-in-out"
               />
             </div>
           ))}

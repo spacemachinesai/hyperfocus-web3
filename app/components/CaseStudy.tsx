@@ -97,7 +97,7 @@ export default function CaseStudy() {
 
                   {/* Data table preview */}
                   <div className="bg-pureWhite rounded-lg overflow-hidden text-sm">
-                    <div className="grid grid-cols-4 gap-4 p-3 bg-marble border-b font-medium text-volcanic-900">
+                    <div className="grid grid-cols-4 gap-4 p-3 bg-neutral-90 border-b font-medium text-volcanic-900">
                       <span></span>
                       <span className="text-[#4ade80]">Jan</span>
                       <span className="text-[#4ade80]">Feb</span>

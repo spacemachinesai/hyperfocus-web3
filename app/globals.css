@@ -135,6 +135,8 @@ html {
 .text-web3-60 { font-size: 3.75rem; line-height: 1; letter-spacing: -0.02em; }
 .text-web3-64 { font-size: 4rem; line-height: 1; letter-spacing: -0.02em; }
 .text-web3-72 { font-size: 4.5rem; line-height: 1; letter-spacing: -0.02em; }
+.text-web3-96 { font-size: 6rem; line-height: 1; letter-spacing: -0.02em; }
+.text-web3-120 { font-size: 7.5rem; line-height: 1; letter-spacing: -0.02em; }
 
 /* Heading variants */
 .text-web3-24-heading { font-size: 24px; line-height: 1.2; font-weight: 500; }

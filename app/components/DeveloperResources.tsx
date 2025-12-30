@@ -53,7 +53,7 @@ export default function DeveloperResources() {
           </div>
 
           {/* Right - Docs Panel */}
-          <div className="bg-pureWhite rounded-card shadow-2xl overflow-hidden">
+          <div className="bg-pureWhite rounded-[20px] shadow-2xl overflow-hidden">
             {/* Header */}
             <div className="p-4 border-b">
               <div className="flex items-center gap-2">

@@ -55,7 +55,7 @@ export default function Industries() {
           <div className="flex items-center gap-2">
             <button
               onClick={prevSlide}
-              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-marble transition-colors duration-300 ease-in-out"
+              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-neutral-90 transition-opacity duration-300 ease-in-out"
               aria-label="Previous"
             >
               <svg className="w-5 h-5 text-volcanic-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -64,7 +64,7 @@ export default function Industries() {
             </button>
             <button
               onClick={nextSlide}
-              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-marble transition-colors duration-300 ease-in-out"
+              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-neutral-90 transition-opacity duration-300 ease-in-out"
               aria-label="Next"
             >
               <svg className="w-5 h-5 text-volcanic-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -80,7 +80,7 @@ export default function Industries() {
             <Link
               key={index}
               href={industry.href}
-              className="group relative aspect-[3/4] rounded-card overflow-hidden cursor-pointer block"
+              className="group relative h-[400px] rounded-[20px] overflow-hidden cursor-pointer block"
             >
               <Image
                 src={industry.image}
