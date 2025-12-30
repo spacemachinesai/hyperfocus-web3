@@ -18,15 +18,19 @@ export default function CTA() {
 
       <div className="container-web3 relative z-10">
         <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
-          <h2 className="text-web3-36 md:text-web3-48 lg:text-web3-56 font-medium text-white mb-6">
-            Ready to put AI to work?
+          <h2 className="text-web3-36 md:text-web3-48 lg:text-web3-56 font-medium text-white mb-4">
+            Stop exporting CSVs. Start knowing your numbers.
           </h2>
 
+          <p className="text-web3-18 md:text-web3-20 text-white/80 mb-6">
+            Join the waitlist. We&apos;re onboarding in batches.
+          </p>
+
           <Link
-            href="#demo"
+            href="#early-access"
             className="inline-flex items-center justify-center px-8 py-4 bg-pureWhite text-volcanic-900 rounded-full font-medium hover:bg-white/90 transition-colors duration-300 ease-in-out"
           >
-            Request a demo
+            Get Early Access
           </Link>
         </div>
       </div>
