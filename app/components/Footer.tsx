@@ -4,43 +4,29 @@ import Link from "next/link";
 import { useState } from "react";
 
 const footerLinks = {
-  Products: [
-    { label: "North", href: "#" },
-    { label: "Compass", href: "#" },
-    { label: "Command", href: "#" },
-    { label: "Embed", href: "#" },
-    { label: "Rerank", href: "#" },
-    { label: "Customization", href: "#" },
-    { label: "Pricing", href: "#" },
-    { label: "Deployment Options", href: "#" },
-    { label: "Private Deployments", href: "#" },
+  Product: [
+    { label: "Features", href: "#" },
+    { label: "Integrations", href: "#" },
+    { label: "Changelog", href: "#" },
   ],
   Solutions: [
-    { label: "Technology", href: "#" },
-    { label: "Energy and Utilities", href: "#" },
-    { label: "Financial Services", href: "#" },
-    { label: "Healthcare and Life Sciences", href: "#" },
-    { label: "Manufacturing", href: "#" },
-    { label: "Public Sector", href: "#" },
+    { label: "For Sellers", href: "#" },
+    { label: "For Agencies", href: "#" },
+    { label: "Amazon", href: "#" },
+    { label: "TikTok Shop", href: "#" },
+    { label: "Multi-Channel", href: "#" },
+    { label: "Wholesale", href: "#" },
   ],
-  Resources: [
-    { label: "Blog", href: "#" },
-    { label: "Developers", href: "#" },
-    { label: "Events", href: "#" },
-    { label: "On-Demand Events", href: "#" },
-    { label: "LLM University", href: "#" },
-    { label: "Documentation", href: "#" },
-    { label: "Release Notes", href: "#" },
+  Compare: [
+    { label: "vs Spreadsheets", href: "#" },
+    { label: "vs Hiring", href: "#" },
   ],
   Company: [
     { label: "About", href: "#" },
-    { label: "Careers", href: "#" },
-    { label: "Research", href: "#" },
-    { label: "Newsroom", href: "#" },
-    { label: "Partners", href: "#" },
+    { label: "Manifesto", href: "#" },
     { label: "Security", href: "#" },
-    { label: "Trust Center", href: "#" },
-    { label: "Modern Slavery Act", href: "#" },
+    { label: "Privacy Policy", href: "#" },
+    { label: "Terms of Service", href: "#" },
   ],
 };
 
@@ -150,7 +136,7 @@ export default function Footer() {
           {/* Copyright and Links */}
           <div className="flex flex-wrap items-center justify-center gap-6">
             <span className="text-web3-12 text-neutral-65">
-              hyperfocus.tech &copy; {new Date().getFullYear()}
+              &copy; 2026 Hyperfocus Tech Inc.
             </span>
             <Link href="#" className="text-web3-12 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out">
               Privacy
