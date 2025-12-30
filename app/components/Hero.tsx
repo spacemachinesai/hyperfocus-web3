@@ -10,7 +10,7 @@ export default function Hero() {
         {/* Centered Content */}
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-16">
           {/* Main Headline */}
-          <h1 className="text-web3-48 md:text-web3-64 lg:text-web3-72 font-medium tracking-tight text-volcanic-900 mb-6" style={{ fontSize: 'clamp(48px, 5vw, 72px)', lineHeight: 1 }}>
+          <h1 className="text-web3-40 lg:text-web3-72 font-medium text-volcanic-900 mb-6">
             Your next breakthrough,
             <br />
             powered by AI

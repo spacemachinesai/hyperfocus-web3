@@ -118,23 +118,23 @@ html {
   background: rgba(255, 119, 89, 0.3);
 }
 
-/* Custom Cohere typography - full scale */
-.text-web3-7 { font-size: 7px; line-height: 1.2; }
-.text-web3-12 { font-size: 12px; line-height: 1.4; }
-.text-web3-14 { font-size: 14px; line-height: 1.5; }
-.text-web3-16 { font-size: 16px; line-height: 1.5; }
-.text-web3-18 { font-size: 18px; line-height: 1.4; }
-.text-web3-20 { font-size: 20px; line-height: 1.3; }
-.text-web3-24 { font-size: 24px; line-height: 1.3; }
-.text-web3-28 { font-size: 28px; line-height: 1.2; }
-.text-web3-32 { font-size: 32px; line-height: 1.2; }
-.text-web3-36 { font-size: 36px; line-height: 1.1; }
-.text-web3-40 { font-size: 40px; line-height: 1.1; }
-.text-web3-48 { font-size: 48px; line-height: 1.1; }
-.text-web3-56 { font-size: 56px; line-height: 1.05; }
-.text-web3-60 { font-size: 60px; line-height: 1.05; }
-.text-web3-64 { font-size: 64px; line-height: 1.05; }
-.text-web3-72 { font-size: 72px; line-height: 1; }
+/* Custom Cohere typography - exact from reference */
+.text-web3-7 { font-size: 0.5rem; line-height: 1.4; letter-spacing: 0.02em; }
+.text-web3-12 { font-size: 0.75rem; line-height: 1.4; }
+.text-web3-14 { font-size: 0.875rem; line-height: 1.4; letter-spacing: 0; }
+.text-web3-16 { font-size: 1rem; line-height: 1.4; letter-spacing: 0; }
+.text-web3-18 { font-size: 1.125rem; line-height: 1.4; letter-spacing: 0; }
+.text-web3-20 { font-size: 1.25rem; line-height: 1.3; }
+.text-web3-24 { font-size: 1.5rem; line-height: 1.3; letter-spacing: 0; }
+.text-web3-28 { font-size: 1.75rem; line-height: 1.2; letter-spacing: -0.01em; }
+.text-web3-32 { font-size: 2rem; line-height: 1; }
+.text-web3-36 { font-size: 2.25rem; line-height: 1; }
+.text-web3-40 { font-size: 2.5rem; line-height: 1; letter-spacing: -0.02em; }
+.text-web3-48 { font-size: 3rem; line-height: 1; }
+.text-web3-56 { font-size: 3.5rem; line-height: 1; letter-spacing: -0.02em; }
+.text-web3-60 { font-size: 3.75rem; line-height: 1; letter-spacing: -0.02em; }
+.text-web3-64 { font-size: 4rem; line-height: 1; letter-spacing: -0.02em; }
+.text-web3-72 { font-size: 4.5rem; line-height: 1; letter-spacing: -0.02em; }
 
 /* Heading variants */
 .text-web3-24-heading { font-size: 24px; line-height: 1.2; font-weight: 500; }
@@ -455,9 +455,9 @@ html {
   }
 }
 
-/* Card border radius - Cohere exact 22px */
+/* Card border radius - Cohere exact 20px */
 .rounded-card {
-  border-radius: 22px;
+  border-radius: 20px;
 }
 
 /* Hero section specific - exact from Cohere: pt-28 md:pt-40 pb-12 md:pb-20 */
