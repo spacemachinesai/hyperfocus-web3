@@ -7,26 +7,26 @@ import { useState } from "react";
 const industries = [
   {
     title: "Financial Services",
-    image: "/images/60898fc5b86d38de0dafde5f3520c3c9f19a0a9d-880x1120.png",
-    color: "from-amber-900/60",
+    image: "/images/30ec75e875e50726980c6a68a63b315b8503f1f7-840x840.jpg",
+    color: "from-amber-900/70",
     href: "/solutions/financial-services",
   },
   {
     title: "Public Sector",
-    image: "/images/485c110e5e139511521b507a2731dff188ad00a5-1440x1416.png",
-    color: "from-gray-500/60",
+    image: "/images/6ae6fc28f20cc442e8853d60392c50227a430992-840x840.jpg",
+    color: "from-gray-500/70",
     href: "/solutions/public-sector",
   },
   {
     title: "Energy",
-    image: "/images/53bdb371305538ab5186498794ab355070909fae-1440x1360.png",
-    color: "from-sky-600/60",
+    image: "/images/871cc9ed4e63113205ab55e2a6cb207d8d32a2aa-840x840.jpg",
+    color: "from-sky-600/70",
     href: "/solutions/energy-and-utilities",
   },
   {
     title: "Technology",
-    image: "/images/b9481e05f8f2e1d27618b4e23cf057a737a225d5-1436x1080.png",
-    color: "from-neutral-700/60",
+    image: "/images/b5264330c568955041d465542469ebfdeb196547-840x840.jpg",
+    color: "from-neutral-700/70",
     href: "/solutions/technology",
   },
 ];

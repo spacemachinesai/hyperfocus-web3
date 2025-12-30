@@ -102,10 +102,10 @@ export default function Hero() {
           {/* Right Card - Woman working on laptop */}
           <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
             <Image
-              src="/images/woman-laptop.jpg"
+              src="/images/3f55c7c49026cca81ee85c347c84f1719aef1a72-1560x3200.png"
               alt="Professional woman working on laptop"
               fill
-              className="object-cover"
+              className="object-cover object-top"
             />
             {/* Floating Badge */}
             <div className="absolute bottom-8 right-8 bg-white rounded-lg px-4 py-2 shadow-lg">

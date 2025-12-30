@@ -15,7 +15,7 @@ const testimonials = [
     quote: "With Cohere's latest highly secure enterprise LLMs, we aim to provide businesses with powerful and adaptable AI solutions that address specific needs and accelerate the adoption of generative AI globally.",
     author: "Vivek Mahajan",
     role: "Corporate Vice President, CTO and CPO",
-    image: "/images/59c810e472d014a11fe8895a69b3f0721a4c6967-2880x1680.png",
+    image: "/images/d59ed9db0ddb73f0ea4faac7947f9e84265e6be5-2880x1680.jpg",
   },
   {
     company: "Oracle",
