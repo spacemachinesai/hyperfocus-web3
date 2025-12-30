@@ -26,7 +26,7 @@ const newsItems = [
 
 export default function LatestNews() {
   return (
-    <section className="section-padding bg-pureWhite">
+    <section className="bg-pureWhite">
       <div className="container-web3">
         {/* Header */}
         <div className="flex items-center justify-between mb-12">

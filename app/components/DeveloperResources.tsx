@@ -22,7 +22,7 @@ export default function DeveloperResources() {
       {/* Blue gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#1e3a8a] via-[#3730a3] to-[#4c1d95]" />
 
-      <div className="container-web3 relative z-10 py-20 lg:py-32">
+      <div className="container-web3 relative z-10 pb-16 md:pb-36">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-white">

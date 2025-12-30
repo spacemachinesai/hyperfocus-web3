@@ -46,7 +46,7 @@ const features = [
 
 export default function SafeFlexible() {
   return (
-    <section className="section-padding bg-pureWhite">
+    <section className="pt-16 md:pt-36 pb-12 md:pb-20 bg-pureWhite">
       <div className="container-web3">
         {/* Section Header */}
         <div className="text-center mb-16">

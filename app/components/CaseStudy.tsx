@@ -18,7 +18,7 @@ export default function CaseStudy() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent" />
       </div>
 
-      <div className="container-web3 relative z-10 py-20 lg:py-32">
+      <div className="container-web3 relative z-10 pt-10 pb-12 md:pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-white">

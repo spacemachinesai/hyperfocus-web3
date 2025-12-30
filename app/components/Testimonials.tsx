@@ -45,7 +45,7 @@ export default function Testimonials() {
   const testimonial = testimonials[currentSlide];
 
   return (
-    <section className="section-padding bg-pureWhite">
+    <section className="pt-16 md:pt-24 pb-12 md:pb-20 bg-pureWhite">
       <div className="container-web3">
         {/* Header */}
         <div className="flex items-center justify-between mb-12">

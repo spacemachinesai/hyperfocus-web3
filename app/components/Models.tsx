@@ -37,7 +37,7 @@ export default function Models() {
   const [activeModel, setActiveModel] = useState(0);
 
   return (
-    <section className="section-padding bg-marble">
+    <section className="pt-12 md:pt-20 pb-16 md:pb-36 bg-marble">
       <div className="container-web3">
         {/* Section Header */}
         <div className="text-center mb-16">

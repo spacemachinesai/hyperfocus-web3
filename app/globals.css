@@ -460,15 +460,15 @@ html {
   border-radius: 22px;
 }
 
-/* Hero section specific */
+/* Hero section specific - exact from Cohere: pt-28 md:pt-40 pb-12 md:pb-20 */
 .hero-padding {
-  padding-top: 160px;
-  padding-bottom: 80px;
+  padding-top: 7rem;    /* pt-28 = 112px */
+  padding-bottom: 3rem; /* pb-12 = 48px */
 }
 
 @media (min-width: 768px) {
   .hero-padding {
-    padding-top: 160px;
-    padding-bottom: 80px;
+    padding-top: 10rem;  /* md:pt-40 = 160px */
+    padding-bottom: 5rem; /* md:pb-20 = 80px */
   }
 }
