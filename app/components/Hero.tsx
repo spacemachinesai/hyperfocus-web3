@@ -62,21 +62,33 @@ export default function Hero() {
                   <span className="text-white font-medium">Financial Analysis Agent</span>
                 </div>
                 <div className="flex gap-2 mb-4">
-                  <span className="px-3 py-1 bg-[#2a2a2a] rounded-full text-xs text-gray-300 flex items-center gap-1">
+                  {/* Folder icon - green */}
+                  <span className="px-3 py-1.5 bg-[#2a2a2a] rounded-full text-xs text-gray-300 flex items-center gap-2">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                    </svg>
                     <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
                     READY
                   </span>
-                  <span className="px-3 py-1 bg-[#2a2a2a] rounded-full text-xs text-gray-300 flex items-center gap-1">
+                  {/* Google Drive icon - yellow */}
+                  <span className="px-3 py-1.5 bg-[#2a2a2a] rounded-full text-xs text-gray-300 flex items-center gap-2">
+                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M7.71 3.5L1.15 15l3.43 5.5h6.56l3.43-5.5L7.71 3.5zm0 3.27L12.14 15H3.29l4.42-8.23zm8.57-3.27l6.57 11.5-3.43 5.5h-6.56l3.43-5.5 6.56-11.5h-6.57z"/>
+                    </svg>
                     <span className="w-1.5 h-1.5 bg-yellow-500 rounded-full"></span>
                     READY
                   </span>
-                  <span className="px-3 py-1 bg-[#2a2a2a] rounded-full text-xs text-gray-300 flex items-center gap-1">
+                  {/* Dropbox icon - blue */}
+                  <span className="px-3 py-1.5 bg-[#2a2a2a] rounded-full text-xs text-gray-300 flex items-center gap-2">
+                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 6.134L6.069 9.797 12 13.459l5.931-3.662L12 6.134zM6.069 14.47L12 18.13l5.931-3.66L12 10.81l-5.931 3.66zm5.931-12L1.5 8.465l4.569 2.854L12 7.956l5.931 3.363L22.5 8.465 12 2.47zm0 15.322l-5.931-3.66L1.5 17.134 12 23.13l10.5-5.996-4.569-3.003L12 17.792z"/>
+                    </svg>
                     <span className="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
                     READY
                   </span>
                 </div>
                 <div className="bg-[#2a2a2a] rounded-xl p-3">
-                  <span className="text-gray-400 text-sm">Start a chat</span>
+                  <span className="text-gray-400 text-sm">Help me understand our 17% Q3 revenue surplus...</span>
                 </div>
               </div>
             </div>
@@ -87,11 +99,11 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Card - Person with laptop */}
+          {/* Right Card - Woman working on laptop */}
           <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
             <Image
-              src="/images/d59ed9db0ddb73f0ea4faac7947f9e84265e6be5-2880x1680.jpg"
-              alt="Professional working"
+              src="/images/woman-laptop.jpg"
+              alt="Professional woman working on laptop"
               fill
               className="object-cover"
             />

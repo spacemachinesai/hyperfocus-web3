@@ -1,28 +1,33 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const industries = [
   {
     title: "Financial Services",
-    image: "/images/2bdf37ce948a075fe68d570a9da1b10ca74330a6-1472x1472.png",
-    color: "from-amber-900/80",
+    image: "/images/60898fc5b86d38de0dafde5f3520c3c9f19a0a9d-880x1120.png",
+    color: "from-amber-900/60",
+    href: "/solutions/financial-services",
   },
   {
     title: "Public Sector",
-    image: "/images/e6a8075c9b6ed82405bfea0c8b45687eae67ea78-1472x1472.png",
-    color: "from-gray-400/80",
+    image: "/images/485c110e5e139511521b507a2731dff188ad00a5-1440x1416.png",
+    color: "from-gray-500/60",
+    href: "/solutions/public-sector",
   },
   {
     title: "Energy",
-    image: "/images/0ea462b7b3d6aee933777aadc96be761703af232-1360x1360.png",
-    color: "from-sky-400/80",
+    image: "/images/53bdb371305538ab5186498794ab355070909fae-1440x1360.png",
+    color: "from-sky-600/60",
+    href: "/solutions/energy-and-utilities",
   },
   {
     title: "Technology",
-    image: "/images/d59ed9db0ddb73f0ea4faac7947f9e84265e6be5-2880x1680.jpg",
-    color: "from-orange-400/80",
+    image: "/images/b9481e05f8f2e1d27618b4e23cf057a737a225d5-1436x1080.png",
+    color: "from-neutral-700/60",
+    href: "/solutions/technology",
   },
 ];
 
@@ -72,9 +77,10 @@ export default function Industries() {
         {/* Cards Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {industries.map((industry, index) => (
-            <div
+            <Link
               key={index}
-              className="group relative aspect-[3/4] rounded-2xl overflow-hidden cursor-pointer"
+              href={industry.href}
+              className="group relative aspect-[3/4] rounded-2xl overflow-hidden cursor-pointer block"
             >
               <Image
                 src={industry.image}
@@ -82,13 +88,13 @@ export default function Industries() {
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <div className={`absolute inset-0 bg-gradient-to-t ${industry.color} to-transparent opacity-60`} />
+              <div className={`absolute inset-0 bg-gradient-to-t ${industry.color} to-transparent`} />
               <div className="absolute inset-0 p-6 flex flex-col justify-start">
                 <h3 className="text-white text-web3-18 font-medium">
                   {industry.title}
                 </h3>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 

@@ -61,12 +61,6 @@ export default function CTA() {
             >
               Request a demo
             </Link>
-            <Link
-              href="#try"
-              className="inline-flex items-center justify-center px-8 py-4 border border-white/40 text-white rounded-full font-medium hover:bg-white/10 transition-colors"
-            >
-              Try the API
-            </Link>
           </div>
         </div>
       </div>

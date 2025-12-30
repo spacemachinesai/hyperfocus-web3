@@ -5,22 +5,22 @@ import Link from "next/link";
 
 const newsItems = [
   {
-    category: "Company",
-    date: "Dec 12, 2024",
-    title: "Cohere Launches Command R7B: A Small Model with Big Capabilities",
-    image: "/images/b69260eb0e7a7e01b46e46ef7a15649f6dccd9c7-2880x1200.png",
+    author: "Cohere Team",
+    date: "Dec 11, 2025",
+    title: "Introducing Rerank 4: Cohere's most powerful reranker yet",
+    image: "/images/251211_Rerank4Launch_Hero.png",
   },
   {
-    category: "Research",
-    date: "Dec 05, 2024",
-    title: "Introducing Aya Expanse: Connecting 23 Languages with Cutting-Edge AI",
-    image: "/images/d59ed9db0ddb73f0ea4faac7947f9e84265e6be5-2880x1680.jpg",
+    author: "Cohere Team",
+    date: "Nov 27, 2025",
+    title: "Cohere Expands Partnership with SAP to Provide Europe Sovereign AI Solutions",
+    image: "/images/250501_blog-social-image_SAP-partnership-2.png",
   },
   {
-    category: "Product",
-    date: "Nov 28, 2024",
-    title: "North by Cohere: The Enterprise AI Platform Built for Business",
-    image: "/images/2bdf37ce948a075fe68d570a9da1b10ca74330a6-1472x1472.png",
+    author: "Cohere Team",
+    date: "Oct 07, 2025",
+    title: "Announcing the Cohere Partner Program: Boosting enterprise AI",
+    image: "/images/cohere_partner_program_blog_hero_1920x960.jpg",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function LatestNews() {
             href="#blog"
             className="inline-flex items-center gap-2 text-web3-14 font-medium text-[#212121] hover:text-[#71717a] transition-colors"
           >
-            View all
+            See more on the blog
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
@@ -64,12 +64,9 @@ export default function LatestNews() {
               </div>
 
               {/* Meta */}
-              <div className="flex items-center gap-3 mb-3">
-                <span className="text-web3-12 font-medium text-[#FF7759]">
-                  {item.category}
-                </span>
+              <div className="flex items-center gap-2 mb-3">
                 <span className="text-web3-12 text-[#71717a]">
-                  {item.date}
+                  {item.author} - {item.date}
                 </span>
               </div>
 

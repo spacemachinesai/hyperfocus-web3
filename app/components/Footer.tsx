@@ -6,39 +6,42 @@ import { useState } from "react";
 
 const footerLinks = {
   Products: [
+    { label: "North", href: "#" },
+    { label: "Compass", href: "#" },
     { label: "Command", href: "#" },
     { label: "Embed", href: "#" },
     { label: "Rerank", href: "#" },
-    { label: "Aya", href: "#" },
-    { label: "North", href: "#" },
+    { label: "Customization", href: "#" },
+    { label: "Pricing", href: "#" },
+    { label: "Deployment Options", href: "#" },
+    { label: "Private Deployments", href: "#" },
   ],
   Solutions: [
-    { label: "Enterprise AI", href: "#" },
-    { label: "Financial Services", href: "#" },
-    { label: "Healthcare", href: "#" },
     { label: "Technology", href: "#" },
+    { label: "Energy and Utilities", href: "#" },
+    { label: "Financial Services", href: "#" },
+    { label: "Healthcare and Life Sciences", href: "#" },
+    { label: "Manufacturing", href: "#" },
     { label: "Public Sector", href: "#" },
   ],
-  Developers: [
+  Resources: [
+    { label: "Blog", href: "#" },
+    { label: "Developers", href: "#" },
+    { label: "Events", href: "#" },
+    { label: "On-Demand Events", href: "#" },
+    { label: "LLM University", href: "#" },
     { label: "Documentation", href: "#" },
-    { label: "API Reference", href: "#" },
-    { label: "Playground", href: "#" },
-    { label: "Cookbooks", href: "#" },
-    { label: "LLMU", href: "#" },
+    { label: "Release Notes", href: "#" },
   ],
   Company: [
     { label: "About", href: "#" },
     { label: "Careers", href: "#" },
-    { label: "Blog", href: "#" },
     { label: "Research", href: "#" },
-    { label: "Press", href: "#" },
-  ],
-  Resources: [
-    { label: "Case Studies", href: "#" },
-    { label: "Events", href: "#" },
+    { label: "Newsroom", href: "#" },
     { label: "Partners", href: "#" },
+    { label: "Security", href: "#" },
     { label: "Trust Center", href: "#" },
-    { label: "Contact", href: "#" },
+    { label: "Modern Slavery Act", href: "#" },
   ],
 };
 
@@ -108,10 +111,10 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div>
               <h3 className="text-web3-20 font-medium mb-2">
-                Stay up to date
+                AI moves fast
               </h3>
               <p className="text-web3-14 text-[#a1a1aa]">
-                Get the latest news and updates from Cohere.
+                We&apos;ll keep you up to date with the latest.
               </p>
             </div>
             <form onSubmit={handleSubmit} className="flex gap-3 w-full md:w-auto">
@@ -136,7 +139,7 @@ export default function Footer() {
 
       {/* Main Footer */}
       <div className="container-web3 pt-12 pb-8">
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-8 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Logo & Social */}
           <div className="col-span-2 md:col-span-1">
             <Image

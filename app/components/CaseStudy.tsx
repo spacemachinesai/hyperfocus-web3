@@ -116,6 +116,24 @@ export default function CaseStudy() {
                         <span>$34,673.78</span>
                         <span>$71,057.22</span>
                       </div>
+                      <div className="grid grid-cols-4 gap-4 p-3 text-[#212121]">
+                        <span className="text-gray-600">Eclipse sales</span>
+                        <span>$28,456.12</span>
+                        <span>$31,289.45</span>
+                        <span>$42,678.90</span>
+                      </div>
+                      <div className="grid grid-cols-4 gap-4 p-3 text-[#212121]">
+                        <span className="text-gray-600">Odyssey sales</span>
+                        <span>$67,234.56</span>
+                        <span>$72,891.23</span>
+                        <span>$85,432.10</span>
+                      </div>
+                      <div className="grid grid-cols-4 gap-4 p-3 text-[#212121]">
+                        <span className="text-gray-600">Nova sales</span>
+                        <span>$19,876.34</span>
+                        <span>$23,456.78</span>
+                        <span>$27,890.12</span>
+                      </div>
                     </div>
                   </div>
                 </div>
