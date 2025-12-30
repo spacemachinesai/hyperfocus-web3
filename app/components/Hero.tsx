@@ -30,6 +30,11 @@ export default function Hero() {
               Get early access
             </Link>
           </div>
+
+          {/* Trust Line */}
+          <p className="text-web3-14 text-neutral-50 mt-4">
+            Read-only access · Your data stays yours
+          </p>
         </div>
 
         {/* Demo Cards - Hyperfocus exact sizing */}
