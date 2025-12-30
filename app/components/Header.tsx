@@ -106,7 +106,7 @@ export default function Header() {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-nav bg-pureWhite transition-all duration-300">
+    <header className="fixed top-0 left-0 right-0 z-nav bg-pureWhite transition-all duration-300 ease-in-out">
       <nav
         role="navigation"
         className="flex w-full items-center justify-between gap-x-10 px-4 py-5 md:px-6 md:py-4 [@media(min-width:919px)]:px-10"
@@ -142,7 +142,7 @@ export default function Header() {
             >
               <Link
                 href={item.href}
-                className="nav-link-gradient text-web3-14 font-body text-volcanic-900 hover:text-neutral-50 transition-colors"
+                className="nav-link-gradient text-web3-14 font-body text-volcanic-900 hover:text-neutral-50 transition-colors duration-300 ease-in-out"
               >
                 {item.label}
               </Link>
@@ -162,7 +162,7 @@ export default function Header() {
                     {/* Header */}
                     <Link href="#products" className="group/drawer-title flex items-center gap-x-2 mb-4">
                       <p className="text-web3-20 lg:text-web3-24 font-body">Products</p>
-                      <ArrowIcon className="w-4 h-4 transition-transform group-hover/drawer-title:translate-x-1" />
+                      <ArrowIcon className="w-4 h-4 transition-transform duration-300 ease-in-out group-hover/drawer-title:translate-x-1" />
                     </Link>
 
                     {/* Three columns */}
@@ -237,7 +237,7 @@ export default function Header() {
                       {productsMenu.bottomLinks.map((link) => (
                         <Link key={link.label} href={link.href} className="group/bottom flex items-center gap-x-1.5">
                           <span className="text-web3-14 font-body uppercase">{link.label}</span>
-                          <ArrowIcon className="w-3 h-3 transition-transform group-hover/bottom:translate-x-1" />
+                          <ArrowIcon className="w-3 h-3 transition-transform duration-300 ease-in-out group-hover/bottom:translate-x-1" />
                         </Link>
                       ))}
                     </div>
@@ -273,7 +273,7 @@ export default function Header() {
                         <div className="absolute bottom-4 left-4 right-4 text-pureWhite">
                           <div className="flex items-center gap-1 mb-2">
                             <span className="text-web3-16 lg:text-web3-18 font-body">{solutionsMenu.featured.title}</span>
-                            <ArrowIcon className="w-4 h-4 transition-transform group-hover/card:translate-x-1" />
+                            <ArrowIcon className="w-4 h-4 transition-transform duration-300 ease-in-out group-hover/card:translate-x-1" />
                           </div>
                           <p className="text-web3-14">{solutionsMenu.featured.description}</p>
                         </div>
@@ -285,7 +285,7 @@ export default function Header() {
                       {solutionsMenu.bottomLinks.map((link) => (
                         <Link key={link.label} href={link.href} className="group/bottom flex items-center gap-x-1.5">
                           <span className="text-web3-14 font-body uppercase">{link.label}</span>
-                          <ArrowIcon className="w-3 h-3 transition-transform group-hover/bottom:translate-x-1" />
+                          <ArrowIcon className="w-3 h-3 transition-transform duration-300 ease-in-out group-hover/bottom:translate-x-1" />
                         </Link>
                       ))}
                     </div>
@@ -307,7 +307,7 @@ export default function Header() {
                         <div className="absolute bottom-4 left-4 right-4 text-pureWhite">
                           <div className="flex items-center gap-1 mb-2">
                             <span className="text-web3-16 lg:text-web3-18 font-body">{researchMenu.featured.title}</span>
-                            <ArrowIcon className="w-4 h-4 transition-transform group-hover/card:translate-x-1" />
+                            <ArrowIcon className="w-4 h-4 transition-transform duration-300 ease-in-out group-hover/card:translate-x-1" />
                           </div>
                           <p className="text-web3-14">{researchMenu.featured.description}</p>
                         </div>
@@ -440,7 +440,7 @@ export default function Header() {
         <div className="hidden flex-1 items-center justify-end gap-x-4 lg:flex">
           <Link
             href="#signin"
-            className="text-web3-14 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors"
+            className="text-web3-14 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors duration-300 ease-in-out"
           >
             Sign in
           </Link>

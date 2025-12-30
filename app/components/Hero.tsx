@@ -31,7 +31,7 @@ export default function Hero() {
             </Link>
             <Link
               href="#products"
-              className="text-web3-16 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors"
+              className="text-web3-16 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors duration-300 ease-in-out"
             >
               Explore products
             </Link>

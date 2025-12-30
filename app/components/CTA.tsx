@@ -24,7 +24,7 @@ export default function CTA() {
 
           <Link
             href="#demo"
-            className="inline-flex items-center justify-center px-8 py-4 bg-pureWhite text-volcanic-900 rounded-full font-medium hover:bg-white/90 transition-colors"
+            className="inline-flex items-center justify-center px-8 py-4 bg-pureWhite text-volcanic-900 rounded-full font-medium hover:bg-white/90 transition-colors duration-300 ease-in-out"
           >
             Request a demo
           </Link>

@@ -190,7 +190,7 @@ html {
   z-index: 100;
 }
 
-/* Button styles - Cohere exact */
+/* Button styles - Cohere exact with ease-in-out */
 .btn-primary {
   background: var(--color-volcanic);
   color: white;
@@ -198,7 +198,7 @@ html {
   border-radius: 9999px;
   font-size: 14px;
   font-weight: 500;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease-in-out;
   border: none;
   cursor: pointer;
   display: inline-flex;
@@ -209,7 +209,6 @@ html {
 
 .btn-primary:hover {
   opacity: 0.9;
-  transform: translateY(-1px);
 }
 
 .btn-secondary {
@@ -219,7 +218,7 @@ html {
   border-radius: 9999px;
   font-size: 14px;
   font-weight: 500;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease-in-out;
   border: 1px solid var(--color-neutral-80);
   cursor: pointer;
   display: inline-flex;
@@ -245,7 +244,7 @@ html {
   height: 1px;
   width: 0;
   background: linear-gradient(to right, var(--color-coral-500), var(--color-violet-500), var(--color-blue-500));
-  transition: width 0.3s ease;
+  transition: width 0.3s ease-in-out;
 }
 
 .nav-link-gradient:hover::after {
@@ -278,24 +277,23 @@ html {
 .product-dot-quartz { background: var(--color-quartz-500); }
 .product-dot-coral { background: var(--color-coral-500); }
 
-/* Card hover effect */
+/* Card hover effect - Cohere style (subtle shadow only) */
 .card-hover {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .card-hover:hover {
-  transform: translateY(-4px);
   box-shadow: 0 12px 24px rgba(0,0,0,0.1);
 }
 
-/* Image scale hover - Cohere style */
+/* Image scale hover - Cohere exact: scale-[1.02] with duration-300 ease-in-out */
 .img-hover-scale {
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .group:hover .img-hover-scale,
 .img-hover-scale:hover {
-  transform: scale(1.2);
+  transform: scale(1.02);
 }
 
 /* Gradient overlays */
@@ -311,7 +309,7 @@ html {
   background: linear-gradient(180deg, rgba(243, 227, 245, 0) 3.88%, #465ecb 56.2%);
 }
 
-/* Mega menu styles */
+/* Mega menu styles - Cohere exact with ease-in-out */
 .mega-menu {
   position: absolute;
   left: 50%;
@@ -319,7 +317,7 @@ html {
   transform: translateX(-50%) translateY(-8px);
   opacity: 0;
   pointer-events: none;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   border-radius: 16px;
   border: 1px solid var(--color-neutral-90);
   background: white;
@@ -332,7 +330,7 @@ html {
   pointer-events: auto;
 }
 
-/* Hover background for menu items */
+/* Hover background for menu items - Cohere exact */
 .menu-item-hover {
   position: relative;
 }
@@ -344,7 +342,7 @@ html {
   border-radius: 8px;
   background: var(--color-neutral-90);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease-in-out;
   z-index: -1;
 }
 
@@ -352,14 +350,14 @@ html {
   opacity: 0.9;
 }
 
-/* Link with arrow animation */
+/* Link with arrow animation - Cohere exact */
 .link-arrow {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   font-size: 14px;
   font-weight: 500;
-  transition: gap 0.2s ease;
+  transition: gap 0.3s ease-in-out;
 }
 
 .link-arrow:hover {
@@ -472,4 +470,32 @@ html {
     padding-top: 10rem;  /* md:pt-40 = 160px */
     padding-bottom: 5rem; /* md:pb-20 = 80px */
   }
+}
+
+/* Cohere max-width containers - exact values */
+.max-w-web3-full-screen { max-width: 2280px; }
+.max-w-web3-internal-wrapper { max-width: 1920px; }
+
+/* Transition delays - Cohere patterns */
+.delay-500 { transition-delay: 500ms; }
+.delay-700 { transition-delay: 700ms; }
+.delay-800 { transition-delay: 800ms; }
+
+/* Cohere transition presets */
+.transition-cohere {
+  transition: all 0.3s ease-in-out;
+}
+
+.transition-cohere-opacity {
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Cohere opacity states for animations */
+.opacity-enter {
+  opacity: 0;
+}
+
+.opacity-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }

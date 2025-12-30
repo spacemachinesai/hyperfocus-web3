@@ -77,7 +77,7 @@ export default function SafeFlexible() {
               {/* Link */}
               <Link
                 href={`#${feature.title.toLowerCase()}`}
-                className="inline-flex items-center gap-2 text-web3-14 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors"
+                className="inline-flex items-center gap-2 text-web3-14 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors duration-300 ease-in-out"
               >
                 Learn more
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

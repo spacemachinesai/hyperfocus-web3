@@ -125,11 +125,11 @@ export default function Models() {
                   onClick={() => setActiveModel(activeModel === index ? -1 : index)}
                   className="w-full py-6 flex items-center justify-between text-left"
                 >
-                  <span className={`text-web3-24 font-medium transition-colors ${activeModel === index ? "text-volcanic-900" : "text-neutral-50"}`}>
+                  <span className={`text-web3-24 font-medium transition-colors duration-300 ease-in-out ${activeModel === index ? "text-volcanic-900" : "text-neutral-50"}`}>
                     {model.name}
                   </span>
                   <svg
-                    className={`w-5 h-5 text-volcanic-900 transition-transform ${activeModel === index ? "rotate-180" : ""}`}
+                    className={`w-5 h-5 text-volcanic-900 transition-transform duration-300 ease-in-out ${activeModel === index ? "rotate-180" : ""}`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -160,7 +160,7 @@ export default function Models() {
 
                     <Link
                       href={`#${model.name.toLowerCase()}`}
-                      className="inline-flex items-center gap-2 text-web3-14 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors"
+                      className="inline-flex items-center gap-2 text-web3-14 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors duration-300 ease-in-out"
                     >
                       Learn more
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

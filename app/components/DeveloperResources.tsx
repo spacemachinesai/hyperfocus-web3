@@ -36,13 +36,13 @@ export default function DeveloperResources() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="#docs"
-                className="inline-flex items-center justify-center px-6 py-3 border border-white text-white rounded-full font-medium hover:bg-white/10 transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 border border-white text-white rounded-full font-medium hover:bg-white/10 transition-colors duration-300 ease-in-out"
               >
                 Let&apos;s go
               </Link>
               <Link
                 href="#api-key"
-                className="inline-flex items-center gap-2 text-white font-medium hover:text-white/80 transition-colors"
+                className="inline-flex items-center gap-2 text-white font-medium hover:text-white/80 transition-colors duration-300 ease-in-out"
               >
                 Get an API key
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -68,7 +68,7 @@ export default function DeveloperResources() {
               {["Guides and concepts", "API Reference", "Release Notes", "LLMU", "Cookbooks"].map((tab) => (
                 <button
                   key={tab}
-                  className="px-3 py-1.5 text-sm text-volcanic-900 whitespace-nowrap hover:bg-neutral-100 rounded transition-colors"
+                  className="px-3 py-1.5 text-sm text-volcanic-900 whitespace-nowrap hover:bg-neutral-100 rounded transition-colors duration-300 ease-in-out"
                 >
                   {tab}
                 </button>
@@ -87,7 +87,7 @@ export default function DeveloperResources() {
                         <li key={item}>
                           <button
                             onClick={() => setActiveSection(item)}
-                            className={`w-full text-left px-2 py-1 rounded text-sm transition-colors ${
+                            className={`w-full text-left px-2 py-1 rounded text-sm transition-colors duration-300 ease-in-out ${
                               activeSection === item
                                 ? "bg-green-500 text-white"
                                 : "text-neutral-60 hover:bg-neutral-100"
@@ -116,7 +116,7 @@ export default function DeveloperResources() {
                     <button
                       key={lang}
                       onClick={() => setActiveTab(lang)}
-                      className={`transition-colors ${
+                      className={`transition-colors duration-300 ease-in-out ${
                         activeTab === lang
                           ? "text-volcanic-900 font-medium border-b-2 border-volcanic-900"
                           : "text-neutral-50 hover:text-volcanic-900"

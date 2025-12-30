@@ -36,7 +36,7 @@ export default function LatestNews() {
 
           <Link
             href="#blog"
-            className="inline-flex items-center gap-2 text-web3-14 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors"
+            className="inline-flex items-center gap-2 text-web3-14 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors duration-300 ease-in-out"
           >
             See more on the blog
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -59,7 +59,7 @@ export default function LatestNews() {
                   src={item.image}
                   alt={item.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="object-cover transition-all duration-300 ease-in-out group-hover:scale-[1.2]"
                 />
               </div>
 
@@ -71,7 +71,7 @@ export default function LatestNews() {
               </div>
 
               {/* Title */}
-              <h3 className="text-web3-18 font-medium text-volcanic-900 group-hover:text-neutral-50 transition-colors line-clamp-2">
+              <h3 className="text-web3-18 font-medium text-volcanic-900 group-hover:text-neutral-50 transition-colors duration-300 ease-in-out line-clamp-2">
                 {item.title}
               </h3>
             </Link>

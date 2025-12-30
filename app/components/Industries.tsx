@@ -55,7 +55,7 @@ export default function Industries() {
           <div className="flex items-center gap-2">
             <button
               onClick={prevSlide}
-              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-marble transition-colors"
+              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-marble transition-colors duration-300 ease-in-out"
               aria-label="Previous"
             >
               <svg className="w-5 h-5 text-volcanic-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -64,7 +64,7 @@ export default function Industries() {
             </button>
             <button
               onClick={nextSlide}
-              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-marble transition-colors"
+              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-marble transition-colors duration-300 ease-in-out"
               aria-label="Next"
             >
               <svg className="w-5 h-5 text-volcanic-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -86,7 +86,7 @@ export default function Industries() {
                 src={industry.image}
                 alt={industry.title}
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-[1.02]"
               />
               <div className={`absolute inset-0 bg-gradient-to-t ${industry.color} to-transparent`} />
               <div className="absolute inset-0 p-6 flex flex-col justify-start">
@@ -102,7 +102,7 @@ export default function Industries() {
         <div className="mt-8 flex justify-center">
           <div className="w-64 h-1 bg-neutral-90 rounded-full overflow-hidden">
             <div
-              className="h-full bg-coral-500 rounded-full transition-all duration-300"
+              className="h-full bg-coral-500 rounded-full transition-all duration-300 ease-in-out"
               style={{ width: `${((currentSlide + 1) / Math.max(1, industries.length - 3)) * 50 + 50}%` }}
             />
           </div>

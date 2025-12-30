@@ -46,7 +46,7 @@ export default function CaseStudy() {
             {/* CTA */}
             <Link
               href="#north"
-              className="inline-flex items-center px-6 py-3 bg-pureWhite text-volcanic-900 rounded-full font-medium hover:bg-white/90 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-pureWhite text-volcanic-900 rounded-full font-medium hover:bg-white/90 transition-colors duration-300 ease-in-out"
             >
               Go North
             </Link>

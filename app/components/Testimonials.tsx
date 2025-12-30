@@ -57,7 +57,7 @@ export default function Testimonials() {
           <div className="flex items-center gap-2">
             <button
               onClick={prevSlide}
-              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-marble transition-colors"
+              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-marble transition-colors duration-300 ease-in-out"
               aria-label="Previous"
             >
               <svg className="w-5 h-5 text-volcanic-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -66,7 +66,7 @@ export default function Testimonials() {
             </button>
             <button
               onClick={nextSlide}
-              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-marble transition-colors"
+              className="w-10 h-10 rounded-full border border-neutral-90 flex items-center justify-center hover:bg-marble transition-colors duration-300 ease-in-out"
               aria-label="Next"
             >
               <svg className="w-5 h-5 text-volcanic-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -99,7 +99,7 @@ export default function Testimonials() {
             {/* Link */}
             <Link
               href="#case-study"
-              className="inline-flex items-center gap-2 text-web3-14 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors"
+              className="inline-flex items-center gap-2 text-web3-14 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors duration-300 ease-in-out"
             >
               Read more
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -123,7 +123,7 @@ export default function Testimonials() {
         <div className="mt-8 flex justify-center">
           <div className="w-64 h-1 bg-neutral-90 rounded-full overflow-hidden">
             <div
-              className="h-full bg-coral-500 rounded-full transition-all duration-300"
+              className="h-full bg-coral-500 rounded-full transition-all duration-300 ease-in-out"
               style={{ width: `${((currentSlide + 1) / testimonials.length) * 100}%` }}
             />
           </div>
