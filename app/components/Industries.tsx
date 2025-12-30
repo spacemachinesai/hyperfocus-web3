@@ -6,28 +6,28 @@ import { useState } from "react";
 
 const industries = [
   {
-    title: "Financial Services",
+    title: "Multi-Channel Sellers",
     image: "/images/30ec75e875e50726980c6a68a63b315b8503f1f7-840x840.jpg",
     color: "from-amber-900/70",
-    href: "/solutions/financial-services",
+    href: "/solutions/multi-channel",
   },
   {
-    title: "Public Sector",
+    title: "Amazon Sellers",
     image: "/images/c422cea71d363bc9dbe8f93a7114f696ebcd04a3-840x840.png",
     color: "from-gray-500/70",
-    href: "/solutions/public-sector",
+    href: "/solutions/amazon",
   },
   {
-    title: "Energy",
+    title: "TikTok Shop Sellers",
     image: "/images/ef4c547b886577f369e62da9e8864992578bfd6a-841x840.jpg",
     color: "from-sky-600/70",
-    href: "/solutions/energy-and-utilities",
+    href: "/solutions/tiktok-shop",
   },
   {
-    title: "Technology",
+    title: "Agencies & Operators",
     image: "/images/b5264330c568955041d465542469ebfdeb196547-840x840.jpg",
     color: "from-neutral-700/70",
-    href: "/solutions/technology",
+    href: "/solutions/agencies",
   },
 ];
 
@@ -48,7 +48,7 @@ export default function Industries() {
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-web3-24 md:text-web3-36 font-medium text-volcanic-900">
-            Powering progress across industries
+            Built for sellers. And the agencies that run them.
           </h2>
 
           {/* Navigation Arrows */}
