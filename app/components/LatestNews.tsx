@@ -54,7 +54,7 @@ export default function LatestNews() {
               className="group block"
             >
               {/* Image */}
-              <div className="relative aspect-[16/10] rounded-2xl overflow-hidden mb-4">
+              <div className="relative aspect-[16/10] rounded-card overflow-hidden mb-4">
                 <Image
                   src={item.image}
                   alt={item.title}

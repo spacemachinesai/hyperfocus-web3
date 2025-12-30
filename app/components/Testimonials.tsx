@@ -77,7 +77,7 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonial Card */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden border border-neutral-90">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-card overflow-hidden border border-neutral-90">
           {/* Left - Quote */}
           <div className="p-8 lg:p-12 bg-pureWhite flex flex-col">
             {/* Company Logo */}

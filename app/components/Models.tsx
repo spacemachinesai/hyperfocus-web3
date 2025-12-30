@@ -48,7 +48,7 @@ export default function Models() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left - Chat Demo */}
-          <div className="bg-mushroom rounded-3xl p-8">
+          <div className="bg-mushroom rounded-card p-8">
             {/* User message */}
             <div className="flex items-start gap-3 mb-6">
               <div className="w-10 h-10 rounded-full bg-neutral-80 overflow-hidden flex-shrink-0">

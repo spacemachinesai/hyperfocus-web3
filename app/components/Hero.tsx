@@ -5,12 +5,12 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative bg-pureWhite pt-28 pb-12 md:pt-40 md:pb-20 text-volcanic-900">
+    <section className="relative bg-pureWhite hero-padding text-volcanic-900">
       <div className="container-web3">
         {/* Centered Content */}
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto mb-16">
           {/* Main Headline */}
-          <h1 className="text-web3-40 md:text-web3-56 lg:text-web3-72 font-medium tracking-tight text-volcanic-900 mb-6">
+          <h1 className="text-web3-48 md:text-web3-64 lg:text-web3-72 font-medium tracking-tight text-volcanic-900 mb-6" style={{ fontSize: 'clamp(48px, 5vw, 72px)', lineHeight: 1 }}>
             Your next breakthrough,
             <br />
             powered by AI
@@ -31,20 +31,17 @@ export default function Hero() {
             </Link>
             <Link
               href="#products"
-              className="group text-web3-16 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors inline-flex items-center gap-1"
+              className="text-web3-16 font-medium text-volcanic-900 hover:text-neutral-50 transition-colors"
             >
               Explore products
-              <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
             </Link>
           </div>
         </div>
 
-        {/* Demo Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {/* Left Card - Financial Analysis Agent */}
-          <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-[#1a1a2e] via-[#2d1b4e] to-[#1a1a2e] aspect-[4/3]">
+        {/* Demo Cards - Cohere exact sizing */}
+        <div className="grid grid-cols-1 lg:grid-cols-[1.95fr_1fr] gap-6">
+          {/* Left Card - Financial Analysis Agent - aspect 1.95:1 */}
+          <div className="relative rounded-card overflow-hidden bg-gradient-to-br from-[#1a1a2e] via-[#2d1b4e] to-[#1a1a2e]" style={{ aspectRatio: '1.95/1' }}>
             {/* Abstract Background */}
             <div className="absolute inset-0">
               <Image
@@ -107,8 +104,8 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Card - Woman working on laptop */}
-          <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
+          {/* Right Card - Woman working on laptop - aspect 0.96:1 */}
+          <div className="relative rounded-card overflow-hidden" style={{ aspectRatio: '0.96/1' }}>
             <Image
               src="/images/60898fc5b86d38de0dafde5f3520c3c9f19a0a9d-880x1120.png"
               alt="Woman speaking on the phone while working"

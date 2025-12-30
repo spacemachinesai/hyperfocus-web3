@@ -416,12 +416,12 @@ html {
 .stagger-4 { animation-delay: 0.4s; }
 .stagger-5 { animation-delay: 0.5s; }
 
-/* Custom container */
+/* Custom container - Cohere style full-width with padding */
 .container-web3 {
   width: 100%;
-  max-width: 1320px;
+  max-width: none;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 16px;
 }
 
 @media (min-width: 768px) {
@@ -430,13 +430,45 @@ html {
   }
 }
 
-/* Section padding */
+/* Narrower container for text content */
+.container-web3-narrow {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+  .container-web3-narrow {
+    padding: 0 40px;
+  }
+}
+
+/* Section padding - Cohere exact */
 .section-padding {
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 @media (min-width: 768px) {
   .section-padding {
-    padding: 120px 0;
+    padding: 80px 0;
+  }
+}
+
+/* Card border radius - Cohere exact 22px */
+.rounded-card {
+  border-radius: 22px;
+}
+
+/* Hero section specific */
+.hero-padding {
+  padding-top: 160px;
+  padding-bottom: 80px;
+}
+
+@media (min-width: 768px) {
+  .hero-padding {
+    padding-top: 160px;
+    padding-bottom: 80px;
   }
 }

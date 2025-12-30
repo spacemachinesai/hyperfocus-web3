@@ -80,7 +80,7 @@ export default function Industries() {
             <Link
               key={index}
               href={industry.href}
-              className="group relative aspect-[3/4] rounded-2xl overflow-hidden cursor-pointer block"
+              className="group relative aspect-[3/4] rounded-card overflow-hidden cursor-pointer block"
             >
               <Image
                 src={industry.image}
