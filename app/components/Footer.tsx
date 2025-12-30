@@ -54,7 +54,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-volcanic text-white">
+    <footer className="bg-neutral-15 text-white">
       {/* Main Footer */}
       <div className="container-web3 pt-12 md:pt-20 pb-12 md:pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-16">
