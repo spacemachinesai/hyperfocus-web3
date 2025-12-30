@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function CTA() {
   return (
-    <section className="relative pt-12 md:pt-20 pb-12 md:pb-20 md:min-h-[400px] md:max-h-[800px] overflow-hidden">
+    <section className="relative pt-12 md:pt-20 pb-16 md:pb-36 md:min-h-[400px] md:max-h-[800px] overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image

@@ -51,7 +51,7 @@ export default function LatestNews() {
             <Link
               key={index}
               href="#article"
-              className="group block"
+              className="group flex flex-col"
             >
               {/* Image */}
               <div className="relative aspect-[16/10] rounded-[20px] overflow-hidden mb-4">
@@ -71,9 +71,19 @@ export default function LatestNews() {
               </div>
 
               {/* Title */}
-              <h3 className="text-web3-18 font-medium text-volcanic-900 group-hover:text-neutral-50 transition-colors duration-300 ease-in-out line-clamp-2">
+              <h3 className="text-web3-18 font-medium text-volcanic-900 group-hover:text-neutral-50 transition-colors duration-300 ease-in-out line-clamp-2 mb-4">
                 {item.title}
               </h3>
+
+              {/* Read more */}
+              <div className="flex items-center justify-between mt-auto">
+                <span className="text-web3-14 text-volcanic-900 group-hover:text-neutral-50 transition-colors duration-300 ease-in-out">
+                  Read more
+                </span>
+                <svg className="w-4 h-4 text-volcanic-900 group-hover:text-neutral-50 transition-colors duration-300 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
             </Link>
           ))}
         </div>

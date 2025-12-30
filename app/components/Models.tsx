@@ -91,7 +91,7 @@ export default function Models() {
                   <rect x="14" y="14" width="6" height="6" rx="1" />
                 </svg>
               </div>
-              <div className="flex-1 bg-pureWhite rounded-2xl p-4">
+              <div className="flex-1 bg-pureWhite rounded-[20px] p-4">
                 <p className="text-volcanic-900 text-web3-14 mb-3">
                   Certainly! Here&apos;s an initial draft of a product description for your energy management platform.
                 </p>

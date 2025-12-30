@@ -54,7 +54,7 @@ export default function CaseStudy() {
 
           {/* Right Content - Product UI */}
           <div className="relative">
-            <div className="bg-[#0a2a1a]/90 backdrop-blur-sm rounded-2xl p-6 shadow-2xl border border-white/10">
+            <div className="bg-[#0a2a1a]/90 backdrop-blur-sm rounded-[20px] p-6 shadow-2xl border border-white/10">
               {/* Sidebar */}
               <div className="flex">
                 <div className="w-12 flex flex-col items-center gap-4 py-4 border-r border-white/10">

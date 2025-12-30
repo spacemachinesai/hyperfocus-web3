@@ -54,7 +54,7 @@ export default function Hero() {
 
             {/* UI Mockup */}
             <div className="absolute inset-0 flex items-center justify-center p-8">
-              <div className="bg-[#1a1a1a]/90 backdrop-blur-sm rounded-2xl p-6 w-full max-w-md shadow-2xl">
+              <div className="bg-[#1a1a1a]/90 backdrop-blur-sm rounded-[20px] p-6 w-full max-w-md shadow-2xl">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-8 h-8 bg-[#3a3a3a] rounded flex items-center justify-center text-white text-sm font-medium">
                     F
