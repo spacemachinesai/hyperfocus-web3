@@ -6,28 +6,16 @@ import { useState } from "react";
 
 const testimonials = [
   {
-    company: "FUJITSU",
+    company: "Private beta",
     logo: (
       <svg className="h-8" viewBox="0 0 120 24" fill="currentColor">
-        <text x="0" y="20" fontSize="20" fontWeight="bold">FUJITSU</text>
+        <text x="0" y="20" fontSize="20" fontWeight="bold">PRIVATE BETA</text>
       </svg>
     ),
-    quote: "With hyperfocus.tech's AI-powered analytics, we finally have real-time visibility into our multi-channel e-commerce profitability. What used to take our team days now happens automatically.",
-    author: "Vivek Mahajan",
-    role: "Corporate Vice President, CTO and CPO",
+    quote: "Building with real sellers and agencies.",
+    author: "hyperfocus.tech team",
+    role: "Coming soon",
     image: "/images/d59ed9db0ddb73f0ea4faac7947f9e84265e6be5-2880x1680.jpg",
-  },
-  {
-    company: "Oracle",
-    logo: (
-      <svg className="h-6" viewBox="0 0 100 20" fill="currentColor">
-        <text x="0" y="16" fontSize="16" fontWeight="bold">ORACLE</text>
-      </svg>
-    ),
-    quote: "hyperfocus.tech's approach to e-commerce analytics aligns perfectly with how modern sellers need to operate — fast, accurate, and across all channels.",
-    author: "Larry Ellison",
-    role: "Chairman and CTO",
-    image: "/images/b69260eb0e7a7e01b46e46ef7a15649f6dccd9c7-2880x1200.png",
   },
 ];
 
@@ -50,7 +38,7 @@ export default function Testimonials() {
         {/* Header */}
         <div className="flex items-center justify-between mb-10">
           <h2 className="text-web3-24 md:text-web3-36 font-medium text-volcanic-900">
-            Why leading teams trust hyperfocus.tech
+            Private beta
           </h2>
 
           {/* Navigation Arrows */}
