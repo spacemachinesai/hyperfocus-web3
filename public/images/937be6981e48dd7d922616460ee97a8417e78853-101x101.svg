@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 101 101" height="101" width="101">
+<circle stroke-linecap="round" stroke="#17171C" transform="rotate(-180 50.5 50.5)" r="50" cy="50.5" cx="50.5"></circle>
+<circle stroke-linecap="round" stroke="#17171C" transform="rotate(-180 50.5 41.5112)" r="41.0112" cy="41.5112" cx="50.5"></circle>
+<ellipse stroke-linecap="round" stroke="#17171C" transform="rotate(-180 50.4999 32.5225)" ry="32.0225" rx="32.1629" cy="32.5225" cx="50.4999"></ellipse>
+<ellipse stroke-linecap="round" stroke="#17171C" transform="rotate(-180 50.4999 23.5337)" ry="23.0337" rx="23.1742" cy="23.5337" cx="50.4999"></ellipse>
+<ellipse stroke-linecap="round" stroke="#17171C" transform="rotate(-180 50.5002 14.5449)" ry="14.0449" rx="14.1854" cy="14.5449" cx="50.5002"></ellipse>
+<ellipse stroke-linecap="round" stroke="#17171C" transform="rotate(-180 50.5001 5.55613)" ry="5.05618" rx="5.19663" cy="5.55613" cx="50.5001"></ellipse>
+<circle stroke-linecap="round" stroke="#17171C" r="50" cy="50.5" cx="50.5"></circle>
+<circle stroke-linecap="round" stroke="#17171C" r="41.0112" cy="59.4888" cx="50.5"></circle>
+<ellipse stroke-linecap="round" stroke="#17171C" ry="32.0225" rx="32.1629" cy="68.4775" cx="50.5001"></ellipse>
+<ellipse stroke-linecap="round" stroke="#17171C" ry="23.0337" rx="23.1742" cy="77.4663" cx="50.5001"></ellipse>
+<ellipse stroke-linecap="round" stroke="#17171C" ry="14.0449" rx="14.1854" cy="86.4551" cx="50.5001"></ellipse>
+<ellipse stroke-linecap="round" stroke="#17171C" ry="6.83614" rx="7.02603" cy="93.664" cx="50.5026"></ellipse>
+<circle stroke-linecap="round" stroke="#17171C" transform="rotate(-180 50.5 50.5)" r="50" cy="50.5" cx="50.5"></circle>
+</svg>
