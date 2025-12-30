@@ -60,13 +60,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-14">
           {/* Newsletter Section - Left */}
           <div className="lg:col-span-4">
-            <h3 className="text-web3-20 font-medium text-coral-500 mb-2">
+            <h3 className="text-web3-18 font-medium text-coral-500 mb-2">
               AI moves fast
             </h3>
-            <p className="text-white mb-4">
+            <p className="text-web3-18 text-white mb-4">
               We&apos;ll keep you up to date with the latest.
             </p>
-            <p className="text-web3-14 text-neutral-65 mb-6">
+            <p className="text-web3-16 text-neutral-65 mb-6">
               Enter your business email below to receive updates from Cohere. Please refer to our{" "}
               <Link href="#" className="underline hover:text-white">privacy policy</Link>{" "}
               for details or to contact us. You can unsubscribe at any time.
@@ -149,19 +149,19 @@ export default function Footer() {
 
           {/* Copyright and Links */}
           <div className="flex flex-wrap items-center justify-center gap-6">
-            <span className="text-web3-16 text-neutral-65">
+            <span className="text-web3-12 text-neutral-65">
               Cohere &copy; {new Date().getFullYear()}
             </span>
-            <Link href="#" className="text-web3-16 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out">
+            <Link href="#" className="text-web3-12 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out">
               Privacy
             </Link>
-            <Link href="#" className="text-web3-16 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out">
+            <Link href="#" className="text-web3-12 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out">
               Terms of Use
             </Link>
-            <Link href="#" className="text-web3-16 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out">
+            <Link href="#" className="text-web3-12 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out">
               Manage Cookies
             </Link>
-            <button className="text-web3-16 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out flex items-center gap-1">
+            <button className="text-web3-12 text-neutral-65 hover:text-white transition-colors duration-300 ease-in-out flex items-center gap-1">
               English
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
