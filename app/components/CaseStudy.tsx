@@ -30,25 +30,25 @@ export default function CaseStudy() {
                 <circle cx="16" cy="8" r="4" />
                 <circle cx="16" cy="24" r="4" />
               </svg>
-              <span className="text-2xl font-medium">north</span>
+              <span className="text-2xl font-medium font-mono">hyperfocus</span>
             </div>
 
             {/* Headline */}
             <h2 className="text-web3-36 md:text-web3-48 font-medium mb-6">
-              The turnkey AI platform that helps your work flow
+              See your real profit. Across every channel.
             </h2>
 
             {/* Description */}
             <p className="text-web3-18 text-white/80 mb-6">
-              From scattered tools to seamless action — North brings everything together so your work just works.
+              Multi-channel P&L with every fee decoded. Amazon, TikTok Shop, Shopify, Wholesale — all in one view.
             </p>
 
             {/* CTA */}
             <Link
-              href="#north"
+              href="#early-access"
               className="inline-flex items-center px-6 py-3 bg-pureWhite text-volcanic-900 rounded-full font-medium hover:bg-white/90 transition-colors duration-300 ease-in-out"
             >
-              Go North
+              Get Early Access
             </Link>
           </div>
 
@@ -74,14 +74,14 @@ export default function CaseStudy() {
 
                 {/* Main Content */}
                 <div className="flex-1 pl-6">
-                  <h3 className="text-[#4ade80] text-xl font-medium mb-2">Trend Forecasting Agent</h3>
+                  <h3 className="text-[#4ade80] text-xl font-medium mb-2">Channel P&L Agent</h3>
                   <div className="flex items-center gap-2 mb-4">
                     <div className="w-8 h-8 bg-[#4ade80]/20 rounded-full flex items-center justify-center">
                       <svg className="w-4 h-4 text-[#4ade80]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                       </svg>
                     </div>
-                    <p className="text-white/80 text-sm">Analyze historical financial data to forecast revenue and expense trends for the next quarter.</p>
+                    <p className="text-white/80 text-sm">Calculate true profit by channel with all fees decoded. Compare Amazon vs TikTok vs Shopify margins.</p>
                   </div>
 
                   {/* File attachment */}
@@ -90,7 +90,7 @@ export default function CaseStudy() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                     <div>
-                      <p className="text-white text-sm font-medium">MONTHLY_REVENUE_EX...</p>
+                      <p className="text-white text-sm font-medium">CHANNEL_SALES_DATA...</p>
                       <p className="text-white/50 text-xs">.xlsx • 13.7 MB</p>
                     </div>
                   </div>
@@ -105,31 +105,31 @@ export default function CaseStudy() {
                     </div>
                     <div className="divide-y">
                       <div className="grid grid-cols-4 gap-4 p-3 text-volcanic-900">
-                        <span className="text-neutral-60">Genesis sales</span>
+                        <span className="text-neutral-60">Amazon</span>
                         <span>$49,500.83</span>
                         <span>$44,890.34</span>
                         <span>$51,994.95</span>
                       </div>
                       <div className="grid grid-cols-4 gap-4 p-3 text-volcanic-900">
-                        <span className="text-neutral-60">Mercury sales</span>
+                        <span className="text-neutral-60">TikTok Shop</span>
                         <span>$13,758.20</span>
                         <span>$34,673.78</span>
                         <span>$71,057.22</span>
                       </div>
                       <div className="grid grid-cols-4 gap-4 p-3 text-volcanic-900">
-                        <span className="text-neutral-60">Eclipse sales</span>
+                        <span className="text-neutral-60">Shopify</span>
                         <span>$1,580.53</span>
                         <span>$2,289.88</span>
                         <span>$1,954.68</span>
                       </div>
                       <div className="grid grid-cols-4 gap-4 p-3 text-volcanic-900">
-                        <span className="text-neutral-60">Odyssey sales</span>
+                        <span className="text-neutral-60">Wholesale</span>
                         <span>$30,756.21</span>
                         <span>$67,146.89</span>
                         <span>$34,850.34</span>
                       </div>
                       <div className="grid grid-cols-4 gap-4 p-3 text-volcanic-900">
-                        <span className="text-neutral-60">Nova sales</span>
+                        <span className="text-neutral-60">Net Profit</span>
                         <span>$29,670.87</span>
                         <span>$34,675.82</span>
                         <span>$27,805.89</span>
