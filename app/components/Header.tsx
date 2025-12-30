@@ -1,111 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
-
-// Hyperfocus Logo with glow bars
-const HyperfocusLogo = ({ className = "" }: { className?: string }) => (
-  <div className={`flex items-center gap-2 ${className}`}>
-    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="glowGrad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#6366F1" stopOpacity="0" />
-          <stop offset="50%" stopColor="white" stopOpacity="1" />
-          <stop offset="100%" stopColor="#6366F1" stopOpacity="0" />
-        </linearGradient>
-        <filter id="lineGlow" x="-50%" y="-50%" width="200%" height="200%">
-          <feGaussianBlur stdDeviation="0.5" result="blur" />
-          <feMerge>
-            <feMergeNode in="blur" />
-            <feMergeNode in="SourceGraphic" />
-          </feMerge>
-        </filter>
-        <filter id="sparkGlow" x="-100%" y="-100%" width="300%" height="300%">
-          <feGaussianBlur stdDeviation="0.8" result="blur" />
-          <feMerge>
-            <feMergeNode in="blur" />
-            <feMergeNode in="SourceGraphic" />
-          </feMerge>
-        </filter>
-      </defs>
-      <g transform="translate(4,0)" filter="url(#lineGlow)">
-        <rect x="0" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.08" />
-        <rect x="1" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.12" />
-        <rect x="2" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.16" />
-        <rect x="3" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.20" />
-        <rect x="4" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.24" />
-        <rect x="5" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.28" />
-        <rect x="6" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.32" />
-        <rect x="7" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.36" />
-        <rect x="8" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.40" />
-        <rect x="9" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.44" />
-        <rect x="10" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.48" />
-        <rect x="11" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.52" />
-        <rect x="12" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.56" />
-        <rect x="13" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.60" />
-        <rect x="14" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.64" />
-        <rect x="15" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.68" />
-        <rect x="16" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.72" />
-        <rect x="17" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.76" />
-        <rect x="18" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.80" />
-        <rect x="19" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.84" />
-        <rect x="20" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.88" />
-        <rect x="21" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.92" />
-        <rect x="22" y="6" width="1" height="20" fill="url(#glowGrad)" opacity="0.96" />
-      </g>
-      <circle cx="27" cy="9" r="1.2" fill="white" filter="url(#sparkGlow)" />
-    </svg>
-    <span className="font-mono text-lg font-medium text-volcanic-900">
-      hyperfocus<span className="opacity-35">.tech</span>
-    </span>
-  </div>
-);
-
-// Mobile logo (icon only)
-const HyperfocusLogoMobile = () => (
-  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="glowGradMobile" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0%" stopColor="#6366F1" stopOpacity="0" />
-        <stop offset="50%" stopColor="#1a1a1a" stopOpacity="1" />
-        <stop offset="100%" stopColor="#6366F1" stopOpacity="0" />
-      </linearGradient>
-      <filter id="lineGlowMobile" x="-50%" y="-50%" width="200%" height="200%">
-        <feGaussianBlur stdDeviation="0.5" result="blur" />
-        <feMerge>
-          <feMergeNode in="blur" />
-          <feMergeNode in="SourceGraphic" />
-        </feMerge>
-      </filter>
-    </defs>
-    <g transform="translate(4,0)" filter="url(#lineGlowMobile)">
-      <rect x="0" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.08" />
-      <rect x="1" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.12" />
-      <rect x="2" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.16" />
-      <rect x="3" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.20" />
-      <rect x="4" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.24" />
-      <rect x="5" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.28" />
-      <rect x="6" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.32" />
-      <rect x="7" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.36" />
-      <rect x="8" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.40" />
-      <rect x="9" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.44" />
-      <rect x="10" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.48" />
-      <rect x="11" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.52" />
-      <rect x="12" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.56" />
-      <rect x="13" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.60" />
-      <rect x="14" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.64" />
-      <rect x="15" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.68" />
-      <rect x="16" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.72" />
-      <rect x="17" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.76" />
-      <rect x="18" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.80" />
-      <rect x="19" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.84" />
-      <rect x="20" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.88" />
-      <rect x="21" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.92" />
-      <rect x="22" y="6" width="1" height="20" fill="url(#glowGradMobile)" opacity="0.96" />
-    </g>
-    <circle cx="27" cy="9" r="1.2" fill="#1a1a1a" />
-  </svg>
-);
 
 // Products mega menu data
 const productsMenu = {
@@ -216,10 +113,22 @@ export default function Header() {
       >
         {/* Logo */}
         <Link href="/" className="mr-auto flex flex-1 justify-start">
-          <HyperfocusLogo className="hidden md:flex" />
-          <div className="md:hidden">
-            <HyperfocusLogoMobile />
-          </div>
+          <Image
+            src="/images/logo.svg"
+            alt="Cohere"
+            width={118}
+            height={20}
+            className="hidden h-5 w-[118px] md:block"
+            priority
+          />
+          <Image
+            src="/images/logo_mobile.svg"
+            alt="Cohere"
+            width={32}
+            height={32}
+            className="h-8 w-8 md:hidden"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}
