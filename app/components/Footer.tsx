@@ -2,32 +2,42 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 const footerLinks = {
   Products: [
     { label: "Command", href: "#" },
     { label: "Embed", href: "#" },
     { label: "Rerank", href: "#" },
-    { label: "Generate", href: "#" },
-    { label: "Fine-tuning", href: "#" },
+    { label: "Aya", href: "#" },
+    { label: "North", href: "#" },
   ],
   Solutions: [
-    { label: "Enterprise", href: "#" },
-    { label: "Customer Support", href: "#" },
-    { label: "Content Moderation", href: "#" },
-    { label: "Semantic Search", href: "#" },
+    { label: "Enterprise AI", href: "#" },
+    { label: "Financial Services", href: "#" },
+    { label: "Healthcare", href: "#" },
+    { label: "Technology", href: "#" },
+    { label: "Public Sector", href: "#" },
   ],
   Developers: [
     { label: "Documentation", href: "#" },
     { label: "API Reference", href: "#" },
     { label: "Playground", href: "#" },
-    { label: "Discord", href: "#" },
+    { label: "Cookbooks", href: "#" },
+    { label: "LLMU", href: "#" },
   ],
   Company: [
     { label: "About", href: "#" },
-    { label: "Blog", href: "#" },
     { label: "Careers", href: "#" },
+    { label: "Blog", href: "#" },
+    { label: "Research", href: "#" },
     { label: "Press", href: "#" },
+  ],
+  Resources: [
+    { label: "Case Studies", href: "#" },
+    { label: "Events", href: "#" },
+    { label: "Partners", href: "#" },
+    { label: "Trust Center", href: "#" },
     { label: "Contact", href: "#" },
   ],
 };
@@ -69,16 +79,66 @@ const socialLinks = [
       </svg>
     ),
   },
+  {
+    label: "YouTube",
+    href: "#",
+    icon: (
+      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+      </svg>
+    ),
+  },
 ];
 
 export default function Footer() {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Handle newsletter signup
+    console.log("Newsletter signup:", email);
+    setEmail("");
+  };
+
   return (
-    <footer className="bg-[#212121] text-white pt-16 pb-8">
-      <div className="container-web3">
-        {/* Main Footer */}
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-8 mb-16">
-          {/* Logo & Description */}
-          <div className="col-span-2">
+    <footer className="bg-[#212121] text-white">
+      {/* Newsletter Section */}
+      <div className="border-b border-white/10">
+        <div className="container-web3 py-12">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div>
+              <h3 className="text-web3-20 font-medium mb-2">
+                Stay up to date
+              </h3>
+              <p className="text-web3-14 text-[#a1a1aa]">
+                Get the latest news and updates from Cohere.
+              </p>
+            </div>
+            <form onSubmit={handleSubmit} className="flex gap-3 w-full md:w-auto">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email"
+                className="flex-1 md:w-64 px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-white/50 focus:outline-none focus:border-white/40 transition-colors"
+                required
+              />
+              <button
+                type="submit"
+                className="px-6 py-3 bg-white text-[#212121] rounded-lg font-medium hover:bg-white/90 transition-colors whitespace-nowrap"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Footer */}
+      <div className="container-web3 pt-12 pb-8">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-8 mb-12">
+          {/* Logo & Social */}
+          <div className="col-span-2 md:col-span-1">
             <Image
               src="/images/logo.svg"
               alt="Cohere"
@@ -86,12 +146,8 @@ export default function Footer() {
               height={20}
               className="h-6 w-auto mb-6 invert"
             />
-            <p className="text-web3-14 text-[#a1a1aa] mb-6 max-w-xs">
-              Building the future of enterprise AI with secure, customizable, and
-              powerful language models.
-            </p>
             {/* Social Links */}
-            <div className="flex gap-4">
+            <div className="flex gap-3">
               {socialLinks.map((social) => (
                 <Link
                   key={social.label}
@@ -130,7 +186,7 @@ export default function Footer() {
           <p className="text-web3-14 text-[#a1a1aa]">
             &copy; {new Date().getFullYear()} Cohere. All rights reserved.
           </p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap justify-center gap-6">
             <Link
               href="#"
               className="text-web3-14 text-[#a1a1aa] hover:text-white transition-colors"
@@ -141,13 +197,19 @@ export default function Footer() {
               href="#"
               className="text-web3-14 text-[#a1a1aa] hover:text-white transition-colors"
             >
-              Terms of Service
+              Terms of Use
             </Link>
             <Link
               href="#"
               className="text-web3-14 text-[#a1a1aa] hover:text-white transition-colors"
             >
               Cookie Settings
+            </Link>
+            <Link
+              href="#"
+              className="text-web3-14 text-[#a1a1aa] hover:text-white transition-colors"
+            >
+              Accessibility
             </Link>
           </div>
         </div>

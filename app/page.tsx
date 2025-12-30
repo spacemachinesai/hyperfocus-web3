@@ -1,9 +1,13 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import LogoCarousel from "./components/LogoCarousel";
-import Features from "./components/Features";
-import Solutions from "./components/Solutions";
+import SafeFlexible from "./components/SafeFlexible";
+import CaseStudy from "./components/CaseStudy";
+import Industries from "./components/Industries";
+import Models from "./components/Models";
+import DeveloperResources from "./components/DeveloperResources";
 import Testimonials from "./components/Testimonials";
+import LatestNews from "./components/LatestNews";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 
@@ -14,9 +18,13 @@ export default function Home() {
       <main>
         <Hero />
         <LogoCarousel />
-        <Features />
-        <Solutions />
+        <SafeFlexible />
+        <CaseStudy />
+        <Industries />
+        <Models />
+        <DeveloperResources />
         <Testimonials />
+        <LatestNews />
         <CTA />
       </main>
       <Footer />

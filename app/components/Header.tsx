@@ -7,8 +7,8 @@ import Link from "next/link";
 const navItems = [
   { label: "Products", href: "#products" },
   { label: "Solutions", href: "#solutions" },
-  { label: "Developers", href: "#developers" },
   { label: "Research", href: "#research" },
+  { label: "Resources", href: "#resources" },
   { label: "Company", href: "#company" },
 ];
 
@@ -58,16 +58,16 @@ export default function Header() {
         {/* Desktop CTA */}
         <div className="hidden flex-1 items-center justify-end gap-x-4 lg:flex">
           <Link
-            href="#contact"
+            href="#signin"
             className="text-web3-14 font-medium text-[#212121] hover:text-[#71717a] transition-colors"
           >
-            Contact Sales
+            Sign in
           </Link>
           <Link
-            href="#try"
+            href="#demo"
             className="btn-primary inline-flex items-center"
           >
-            Try Now
+            Request a demo
           </Link>
         </div>
 
@@ -111,18 +111,18 @@ export default function Header() {
             ))}
             <div className="mt-8 flex flex-col gap-4">
               <Link
-                href="#contact"
+                href="#signin"
                 className="btn-secondary text-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Contact Sales
+                Sign in
               </Link>
               <Link
-                href="#try"
+                href="#demo"
                 className="btn-primary text-center"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Try Now
+                Request a demo
               </Link>
             </div>
           </div>
