@@ -162,6 +162,11 @@ html {
   font-weight: 400;
 }
 
+/* Monospace font for numbers, code, and logo text */
+.font-mono {
+  font-family: 'Geist Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+}
+
 .font-eyebrow {
   font-size: 11px;
   font-weight: 600;

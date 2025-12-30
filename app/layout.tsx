@@ -32,6 +32,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link href="https://cdn.jsdelivr.net/npm/geist@1.2.0/dist/fonts/geist-mono/style.css" rel="stylesheet" />
+      </head>
       <body className={`${inter.variable} font-sans antialiased bg-white text-[#212121]`}>
         {children}
       </body>
